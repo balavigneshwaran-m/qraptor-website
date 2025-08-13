@@ -23,7 +23,7 @@ c:["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children
 d:["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
 e:["$","$1","c",{"children":["$L12",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/74fc351921f6806e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L13",null,{"children":["$L14",["$","$L15",null,{"promise":"$@16"}]]}]]}]
 f:["$","$1","h",{"children":[null,[["$","$L17",null,{"children":"$L18"}],null],["$","$L19",null,{"children":["$","div",null,{"hidden":true,"children":["$","$8",null,{"fallback":null,"children":"$L1a"}]}]}]]}]
-1b:I[1898,["40","static/chunks/app/docs/page-84163f1abd911166.js"],"DocsPageContent"]
+1b:I[1898,["582","static/chunks/app/docs/%5B...slug%5D/page-b285f45d7e01ed2d.js"],"DocsPageContent"]
 12:["$","$L1b",null,{"initialSlug":["agent-nodes","email-nodes","read-imap-email"],"initialDoc":{"id":"read-imap-email","title":"Read IMAP E-Mail","type":"file","path":"/Agent_Nodes/Email_Nodes/Read_IMAP_Email/Read_IMAP_Email.md","description":"Fetches and processes emails using the IMAP protocol from configured mailboxes within your automation workflows.","tags":["imap","email","automation"],"lastUpdated":"2025-08-01","difficulty":"beginner","estimatedReadTime":"15 min"}}]
 18:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 14:null
