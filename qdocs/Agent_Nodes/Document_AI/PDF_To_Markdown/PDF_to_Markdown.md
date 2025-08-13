@@ -46,7 +46,7 @@ inside a table or it would be dynamically made.
   - Display components  
   - File storage steps
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PDF_To_Markdown/PDF_to_Markdown_Image_1.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PDF_To_Markdown/PDF_to_Markdown_Image_1.png)
 
 ---
 

@@ -26,17 +26,17 @@ When triggered:
 
 - Make a folder inside Data Vault that contains all the Powerpoint files
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_To_MD(s)_Image_1.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_To_MD(s)_Image_1.png)
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_To_MD(s)_Image_2.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_To_MD(s)_Image_2.png)
 
 - Make a global configuration of type DMS Upload and select this folder.
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_To_MD(s)_Image_3.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_To_MD(s)_Image_3.png)
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_To_MD(s)_Image_4.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_To_MD(s)_Image_4.png)
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_To_MD(s)_Image_5.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_To_MD(s)_Image_5.png)
 
 - Choose this particular global configuration in the node as the source. 
 - All `.ppt` or `.pptx` files in this folder will be processed
@@ -45,16 +45,16 @@ When triggered:
 
 - Make a folder inside Data Vault where you want to store all md files converted from PPT.
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_To_MD(s)_Image_6.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_To_MD(s)_Image_6.png)
 
 - Make a global configuration of type DMS Upload and select this folder.
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_To_MD(s)_Image_7.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_To_MD(s)_Image_7.png)
 
 - Choose this particular global configuration in the node as the destination.
 - Each file will be saved as a separate `.md` file named after the original presentation
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_To_MD(s)_Image_8.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_To_MD(s)_Image_8.png)
 
 ---
 

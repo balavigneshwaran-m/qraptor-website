@@ -26,17 +26,17 @@ When the node is triggered:
 
 - Make a folder inside Data Vault that contains all the Pdf files
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_To_MD(s)_Image_1.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_To_MD(s)_Image_1.png)
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_To_MD(s)_Image_2.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_To_MD(s)_Image_2.png)
 
 - Make a global configuration of type DMS Upload and select this folder.
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_To_MD(s)_Image_3.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_To_MD(s)_Image_3.png)
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_To_MD(s)_Image_4.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_To_MD(s)_Image_4.png)
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_To_MD(s)_Image_5.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_To_MD(s)_Image_5.png)
 
 - Choose this particular global configuration in the node as the source. 
 - All `.pdf` files found here will be processed
@@ -45,16 +45,16 @@ When the node is triggered:
 
 - Make a folder inside Data Vault where you want to store all md files converted from PDF.
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_To_MD(s)_Image_6.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_To_MD(s)_Image_6.png)
 
 - Make a global configuration of type DMS Upload and select this folder.
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_To_MD(s)_Image_7.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_To_MD(s)_Image_7.png)
 
 - Choose this particular global configuration in the node as the destination.
 - Each Markdown file will be named after its corresponding PDF
 
-![ :( Can't load image ](/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_To_MD(s)_Image_8.png)
+![ :( Can't load image ](/qdocs/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_To_MD(s)_Image_8.png)
 
 ---
 

@@ -6,7 +6,7 @@ This component is useful when you need users to pick more than one option direct
 ---
 
 # Example Preview
-![:( Can't load image](/qdocs/UI_Nodes/Form/CheckBox/Checkbox_Image_1.png)
+![:( Can't load image](/qdocs/UI_Nodes/Form/Checkbox/Checkbox_Image_1.png)
 
 ---
 

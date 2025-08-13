@@ -97,7 +97,7 @@
               "estimatedReadTime": "10 min"
             },
             {
-              "id": "for n node",
+              "id": "for-n-node",
               "title": "For n Node",
               "type": "file",
               "path": "/Agent_Nodes/Control_Nodes/For_(n)_node/For_(n)_Node.md",
@@ -171,7 +171,7 @@
           "type": "folder",
           "children": [
             {
-                "id": "agent executor",
+                "id": "agent-executor",
                 "title": "Agent Executor",
                 "type": "file",
                 "path": "/Agent_Nodes/AI_Agents/Agent_Executor/Agent_Executor.md",
@@ -186,7 +186,7 @@
                 "estimatedReadTime": "15 min"
             },
             {
-                "id": "prompt your llm",
+                "id": "prompt-your-llm",
                 "title": "Prompt Your LLM",
                 "type": "file",
                 "path": "/Agent_Nodes/AI_Agents/Prompt_your_llm/Prompt_Your_LLM.md",
@@ -201,7 +201,7 @@
                 "estimatedReadTime": "15 min"
             },
             {
-                "id": "eda agent",
+                "id": "eda-agent",
                 "title": "EDA Agent",
                 "type": "file",
                 "path": "/Agent_Nodes/AI_Agents/EDA_Agent/EDA_Agent.md",
@@ -218,7 +218,7 @@
                 "estimatedReadTime": "15 min"
             },
             {
-                "id": "rag agent",
+                "id": "rag-agent",
                 "title": "RAG Agent",
                 "type": "file",
                 "path": "/Agent_Nodes/AI_Agents/RAG_Agent/RAG_Agent.md",
@@ -235,7 +235,7 @@
                 "estimatedReadTime": "15 min"
             },
             {
-                "id": "image validator",
+                "id": "image-validator",
                 "title": "Image Validator",
                 "type": "file",
                 "path": "/Agent_Nodes/AI_Agents/Image_Validator/Image_Validator.md",
@@ -259,7 +259,7 @@
           "type": "folder",
           "children": [
             {
-                "id": "select rows",
+                "id": "select-rows",
                 "title": "Select Rows",
                 "type": "file",
                 "path": "/Agent_Nodes/Data_Management/Select_Rows/Select_Rows.md",
@@ -274,7 +274,7 @@
                 "estimatedReadTime": "15 min"
             },
             {
-                "id": "update row",
+                "id": "update-row",
                 "title": "Update Row",
                 "type": "file",
                 "path": "/Agent_Nodes/Data_Management/Update_Row/Update_Row.md",
@@ -289,7 +289,7 @@
                 "estimatedReadTime": "15 min"
             },
             {
-                "id": "insert multiple rows",
+                "id": "insert-multiple-rows",
                 "title": "Insert Multiple Rows",
                 "type": "file",
                 "path": "/Agent_Nodes/Data_Management/Insert_Multiple_Rows/Insert_Multiple_Row.md",
@@ -304,7 +304,7 @@
                 "estimatedReadTime": "15 min"
             },
             {
-                "id": "insert row",
+                "id": "insert-row",
                 "title": "Insert Row",
                 "type": "file",
                 "path": "/Agent_Nodes/Data_Management/Insert_Row/Insert_Row.md",
@@ -326,7 +326,7 @@
           "type": "folder",
           "children": [
             {
-                "id": "create folder",
+                "id": "create-folder",
                 "title": "Create Folder",
                 "type": "file",
                 "path": "/Agent_Nodes/Dms_Nodes/Create_Folder_DMS/Create_Folder_(DMS).md",
@@ -341,7 +341,7 @@
                 "estimatedReadTime": "15 min"
             },
             {
-                "id": "move from temp folder",
+                "id": "move-from-temp-folder",
                 "title": "Move From Temp Folder",
                 "type": "file",
                 "path": "/Agent_Nodes/Dms_Nodes/Move_from_Temp_Folder_(DMS)/Move_from_Temp_Folder_(DMS).md",
@@ -358,12 +358,12 @@
           ]
         },
         {
-          "id": "vector management",
+          "id": "vector-management",
           "title": "Vector Management",
           "type": "folder",
           "children": [
             {
-                "id": "md to vector",
+                "id": "md-to-vector",
                 "title": "MD To Vector",
                 "type": "file",
                 "path": "/Agent_Nodes/Vector_Management/MD_To_Vector/MD_To_Vector.md",
@@ -378,7 +378,7 @@
                 "estimatedReadTime": "15 min"
             },
             {
-                "id": "pdf to vector",
+                "id": "pdf-to-vector",
                 "title": "PDF To Vector",
                 "type": "file",
                 "path": "/Agent_Nodes/Vector_Management/PDF_To_Vector/PDF_To_Vector.md",
@@ -395,12 +395,12 @@
           ]
         },
         {
-          "id": "user tasks",
+          "id": "user-tasks",
           "title": "User Tasks",
           "type": "folder",
           "children": [
             {
-            "id": "generic user input",
+            "id": "generic-user-input",
             "title": "Generic User Input",
             "type": "file",
             "path": "/Agent_Nodes/User_Tasks/Generic_User_Input/Generic_User_Input.md",
@@ -415,7 +415,7 @@
             "estimatedReadTime": "15 min"
             },
             {
-            "id": "user input form",
+            "id": "user-input-form",
             "title": "User Input Form",
             "type": "file",
             "path": "/Agent_Nodes/User_Tasks/User_Input_Form/User_Input_Form.md",
@@ -437,7 +437,7 @@
           "type": "folder",
           "children": [
             {
-              "id": "send message",
+              "id": "send-message-whatsapp",
               "title": "Send Message",
               "type": "file",
               "path": "/Agent_Nodes/Whatsapp_Nodes/Send_Message_Whatsapp/Send_Message_WhatsApp.md",
@@ -452,7 +452,7 @@
               "estimatedReadTime": "15 min"
             },
             {
-              "id": "whatsapp send message template",
+              "id": "whatsapp-send-message-template",
               "title": "WhatsApp Send Message Template",
               "type": "file",
               "path": "/Agent_Nodes/Whatsapp_Nodes/Send_Message_template_WhatsApp/WhatsApp_Send_Template_Node.md",
@@ -475,7 +475,7 @@
           "type": "folder",
           "children": [
             {
-              "id": "message card template",
+              "id": "message-card-template",
               "title": "Message Card Template",
               "type": "file",
               "path": "/Agent_Nodes/Teams_Nodes/Message_Card_Template_Teams/Message_Card_Template_Teams.md",
@@ -490,7 +490,7 @@
               "estimatedReadTime": "15 min"
             },
             {
-              "id": "send message",
+              "id": "send-message-teams",
               "title": "Send Message",
               "type": "file",
               "path": "/Agent_Nodes/Teams_Nodes/Teams_send_message/Send_Message_Teams.md",
@@ -534,7 +534,7 @@
           "type": "folder",
           "children": [
             {
-              "id": "delete api",
+              "id": "delete-api",
               "title": "DELETE API",
               "type": "file",
               "path": "/Agent_Nodes/Api_Operations/DELETE_API/DELETE_API.md",
@@ -549,7 +549,7 @@
               "estimatedReadTime": "15 min"
             },
             {
-              "id": "get api",
+              "id": "get-api",
               "title": "GET API",
               "type": "file",
               "path": "/Agent_Nodes/Api_Operations/GET_API/GET_API.md",
@@ -564,7 +564,7 @@
               "estimatedReadTime": "15 min"
             },
             {
-              "id": "post api",
+              "id": "post-api",
               "title": "POST API",
               "type": "file",
               "path": "/Agent_Nodes/Api_Operations/POST_API/POST_API.md",
@@ -579,7 +579,7 @@
               "estimatedReadTime": "15 min"
             },
             {
-              "id": "put api",
+              "id": "put-api",
               "title": "PUT API",
               "type": "file",
               "path": "/Agent_Nodes/Api_Operations/PUT_API/PUT_API.md",
@@ -601,7 +601,7 @@
           "type": "folder",
           "children": [
             {
-              "id": "send chart data",
+              "id": "send-chart-data",
               "title": "Send Chart Data",
               "type": "file",
               "path": "/Agent_Nodes/Output_Nodes/Send_Chart_Data/Send_Chart_Data.md",
@@ -616,7 +616,7 @@
               "estimatedReadTime": "15 min"
             },
             {
-              "id": "send document data",
+              "id": "send-document-data",
               "title": "Send Document Data",
               "type": "file",
               "path": "/Agent_Nodes/Output_Nodes/Send_Document_Data/Send_Document_Data.md",
@@ -631,7 +631,7 @@
               "estimatedReadTime": "15 min"
             },
             {
-                "id": "send table data",
+                "id": "send-table-data",
                 "title": "Send Table Data",
                 "type": "file",
                 "path": "/Agent_Nodes/Output_Nodes/Send_Table_Data/Send_Table_Data.md",
@@ -646,7 +646,7 @@
                 "estimatedReadTime": "15 min"
             },
             {
-              "id": "send text data",
+              "id": "send-text-data",
               "title": "Send Text Data",
               "type": "file",
               "path": "/Agent_Nodes/Output_Nodes/Send_Text_Data/Send_Text_Data.md",
@@ -668,7 +668,7 @@
           "type": "folder",
           "children": [
             {
-              "id": "read imap email",
+              "id": "read-imap-email",
               "title": "Read IMAP E-Mail",
               "type": "file",
               "path": "/Agent_Nodes/Email_Nodes/Read_IMAP_Email/Read_IMAP_Email.md",
@@ -683,7 +683,7 @@
               "estimatedReadTime": "15 min"
             },
             {
-              "id": "send smtp email",
+              "id": "send-smtp-email",
               "title": "Send SMTP E-Mail",
               "type": "file",
               "path": "/Agent_Nodes/Email_Nodes/Send_SMTP_Email/Send_SMTP_Email.md",
@@ -720,7 +720,7 @@
           "type": "folder",
           "children": [
             {
-              "id": "docs to mds",
+              "id": "docs-to-mds",
               "title": "Doc(s) To MD(s)",
               "type": "file",
               "path": "/Agent_Nodes/Document_AI/DOC(s)_To_MD(s)/Doc(s)_to_MD(s).md",
@@ -735,7 +735,7 @@
               "estimatedReadTime": "15 min"
             },
             {
-              "id": "excels to mds",
+              "id": "excels-to-mds",
               "title": "Excel(s) To MD(s)",
               "type": "file",
               "path": "/Agent_Nodes/Document_AI/Excel(s)_To_MD(s)/Excel(s)_to_MD(s).md",
@@ -750,7 +750,7 @@
               "estimatedReadTime": "15 min"
             },
             {
-              "id": "pdf to markdown",
+              "id": "pdf-to-markdown",
               "title": "PDF To Markdown",
               "type": "file",
               "path": "/Agent_Nodes/Document_AI/PDF_To_Markdown/PDF_to_Markdown.md",
@@ -1097,7 +1097,7 @@
               "id": "markdown-viewer",
               "title": "Markdown Viewer",
               "type": "file",
-              "path": "/UI_Nodes/Document/Markdown_Viewer.md",
+              "path": "/UI_Nodes/Document/Markdown_Viewer/Markdown_Viewer.md",
               "description": "Displays content from a Markdown file in a visually formatted layout, with options for headers, icons, and custom styles.",
               "tags": ["markdown", "viewer", "document", "ui", "display"],
               "lastUpdated": "2025-08-01",
@@ -1108,7 +1108,7 @@
               "id": "pdf-viewer",
               "title": "PDF Viewer",
               "type": "file",
-              "path": "/UI_Nodes/Document/Pdf_Viewer.md",
+              "path": "/UI_Nodes/Document/Pdf_Viewer/Pdf_Viewer.md",
               "description": "Enables inline viewing of PDF files within the application, with customizable headers, styles, and a click-to-view behavior.",
               "tags": ["pdf", "viewer", "document", "ui", "display"],
               "lastUpdated": "2025-08-01",
