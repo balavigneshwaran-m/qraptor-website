@@ -1,0 +1,63 @@
+User-agent: *
+Allow: /
+Allow: /docs/
+Allow: /blog/
+Allow: /qdocs/
+Disallow: /api/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /404
+
+# AI Crawlers - Enhanced access for documentation
+User-agent: GPTBot
+Allow: /
+Allow: /docs/
+Allow: /blog/
+Allow: /qdocs/
+Disallow: /api/
+Disallow: /private/
+
+User-agent: ChatGPT-User
+Allow: /
+Allow: /docs/
+Allow: /blog/
+Allow: /qdocs/
+Disallow: /api/
+Disallow: /private/
+
+User-agent: CCBot
+Allow: /
+Allow: /docs/
+Allow: /blog/
+Allow: /qdocs/
+Disallow: /api/
+Disallow: /private/
+
+User-agent: anthropic-ai
+Allow: /
+Allow: /docs/
+Allow: /blog/
+Allow: /qdocs/
+Disallow: /api/
+Disallow: /private/
+
+User-agent: Claude-Web
+Allow: /
+Allow: /docs/
+Allow: /blog/
+Allow: /qdocs/
+Disallow: /api/
+Disallow: /private/
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /docs/
+Allow: /blog/
+Allow: /qdocs/
+Disallow: /api/
+Disallow: /private/
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+Sitemap: https://qraptor.ai/sitemap.xml
