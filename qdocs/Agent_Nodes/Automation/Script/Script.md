@@ -9,7 +9,7 @@ The **Script** node allows you to execute custom code within your workflow using
 
 ### What This Node Does
 - Executes a code snippet in your chosen language  
-- Can access flow variables using `{{variable_name}}` syntax  
+- Can access flow variables using `input_variables['variable_name']` syntax  
 - Returns the result of the code execution (if desired), to be stored in a variable for later use  
 
 ---
@@ -27,9 +27,20 @@ Choose from supported languages via dropdown:
 
 #### 2. Script Editor
 - Write the code snippet directly in the built-in editor  
-- Use **workflow variables** inside the script by referencing `{{variable_name}}`  
+- Use **workflow variables** inside the script by referencing `input_variables['variable_name']`  
 - Access to built-in functions and modules depending on language  
 - Supports inserting predefined code snippets for convenience  
+- **Output Mapping:**  
+  There is a reserved variable called `result` which is a dictionary. The keys of this dictionary represent the **output names** of the node, and the values represent the **corresponding output values**.  
+  To use this:
+  1. In your script, assign values to `result` keys, e.g.:
+     ```python
+     result['file_name'] = generated_filename
+     result['status'] = 'success'
+     ```
+  2. On the node interface, click **Add Output**, enter the **key name** used in `result` (e.g., `file_name`), and map it to a workflow variable.  
+  3. The mapped variable will then hold the value returned from the script for further use in downstream nodes.  
+
 
 ![ :( Can't load image ](/qdocs/Agent_Nodes/Automation/Script/Script_Node_Image_2.png)
 
@@ -42,7 +53,7 @@ Choose from supported languages via dropdown:
 ### Inputs
 
 - **Script:** Directly type your logic in the editor  
-- **Variables:** Use variables injected via `{{variable_name}}` syntax  
+- **Variables:** Use variables injected via `input_variables['variable_name']` syntax  
 
 ---
 
@@ -80,12 +91,12 @@ Use the Script node when you need to:
   return userId + timestamp
   ```
 
-**Step 2: Upload Node**
+**Step 2: Create Folder Node**
 
-Uses generated_filename as the destination file name
+Uses generated_filename as the destination file name and create a file in DMS.
 
 
 
 **Summary**
 
-The Script node is a flexible execution block where you can run JavaScript, Python, Java, or C++ code inside your workflow. It supports variable injection, standard libraries, and lets you optionally return output for further use.
+The Script node is a flexible execution block where you can run Python code inside your workflow. It supports variable injection, standard libraries, and lets you optionally return output for further use.

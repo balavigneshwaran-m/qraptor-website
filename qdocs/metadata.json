@@ -5,6 +5,141 @@
   "lastUpdated": "2025-01-15",
   "structure": [
     {
+      "id": "platform-overview",
+      "title": "Platform Overview",
+      "type": "folder",
+      "children": [
+        {
+          "id": "audit",
+          "title": "Audit",
+          "type": "folder",
+          "children": [
+            {
+            "id": "audit-page",
+            "title": "Audit Page",
+            "type": "file",
+            "path": "/Platform_Overview/Audit/Audit.md",
+            "description": "The Audit Page offers a centralized dashboard to monitor application performance, track agent activities, and review chat statistics. It helps maintain oversight, understand user interactions, and ensure optimal performance across deployed solutions.",
+            "tags": [
+              "audit",
+              "monitoring",
+              "analytics",
+              "performance"
+            ],
+            "lastUpdated": "2025-01-14",
+            "difficulty": "beginner",
+            "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "data-vault",
+          "title": "Data Vault",
+          "type": "folder",
+          "children": [
+            {
+            "id": "manage-entity",
+            "title": "Manage Entity",
+            "type": "file",
+            "path": "/Platform_Overview/Data_Vault/Manage_Entity/Manage_Entity.md",
+            "description": "The Manage Entity feature lets you visually design and manage your application's data models without writing SQL. You can create tables, define relationships, and import data from Excel, mirroring a PostgreSQL structure for seamless integration with apps, APIs, and reports.",
+            "tags": [
+              "entity",
+              "database",
+              "data-model",
+              "postgresql"
+            ],
+            "lastUpdated": "2025-01-14",
+            "difficulty": "beginner",
+            "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "manage-document",
+              "title": "Manage Document",
+              "type": "file",
+              "path": "/Platform_Overview/Data_Vault/Manage_Document/Manage_Document.md",
+              "description": "The Manage Document feature provides a Document Management System (DMS) to organize, manage, and interact with files and folders. It supports full CRUD operations, allows document previews, and enables uploads within your subscription's storage limits.",
+              "tags": [
+                "document-management",
+                "dms",
+                "files",
+                "folders"
+              ],
+              "lastUpdated": "2025-01-14",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "roles management",
+          "title": "Roles Management",
+          "type": "folder",
+          "children": [
+            {
+              "id": "role-management",
+              "title": "Role Management",
+              "type": "file",
+              "path": "/Platform_Overview/Roles_Management/role_management.md",
+              "description": "The Role Management module enables portal owners and admins to create, manage, and assign roles for users across the platform, ensuring role-based access control where needed.",
+              "tags": [
+                "role-management",
+                "access-control",
+                "user-roles"
+              ],
+              "lastUpdated": "2025-01-14",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "super agent",
+          "title": "Super Agent",
+          "type": "folder",
+          "children": [
+            {
+              "id": "super-agent",
+              "title": "Super-Agent",
+              "type": "file",
+              "path": "/Platform_Overview/Super_Agent/Super_Agent.md",
+              "description": "The Super Agent acts as a central orchestrator for chatbot, voicebot, WhatsApp bot, and Teams bot applications. It uses conversation history, agent capabilities, few-shot training, and configured policies to decide whether to respond directly or route the query to the most suitable specialized agent.",
+              "tags": [
+                "super-agent",
+                "orchestration",
+                "multi-channel"
+              ],
+              "lastUpdated": "2025-01-14",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "users-management",
+          "title": "Users Management",
+          "type": "folder",
+          "children": [
+            {
+              "id": "user-management",
+              "title": "User Management",
+              "type": "file",
+              "path": "/Platform_Overview/Users_Management/Users_Management.md",
+              "description": "The Users Management module enables portal_owner and portal_admin to oversee and control user accounts within their subscription. Depending on assigned access, they can view, add, edit, and remove users from the system.",
+              "tags": [
+                "user-management",
+                "access-control",
+                "administration"
+              ],
+              "lastUpdated": "2025-01-14",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "agent-nodes",
       "title": "Agent Nodes",
       "type": "folder",
