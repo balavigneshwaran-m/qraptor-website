@@ -2,45 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://qraptor.ai</loc>
-    <lastmod>2025-08-18T17:11:14.362Z</lastmod>
+    <lastmod>2025-08-18T17:42:59.086Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://qraptor.ai/docs/</loc>
-    <lastmod>2025-08-18T17:11:14.363Z</lastmod>
+    <lastmod>2025-08-18T17:42:59.086Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://qraptor.ai/blog/</loc>
-    <lastmod>2025-08-18T17:11:14.363Z</lastmod>
+    <lastmod>2025-08-18T17:42:59.086Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://qraptor.ai/pricing/</loc>
-    <lastmod>2025-08-18T17:11:14.363Z</lastmod>
+    <lastmod>2025-08-18T17:42:59.086Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://qraptor.ai/about/</loc>
-    <lastmod>2025-08-18T17:11:14.363Z</lastmod>
+    <lastmod>2025-08-18T17:42:59.086Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://qraptor.ai/contact/</loc>
-    <lastmod>2025-08-18T17:11:14.363Z</lastmod>
+    <lastmod>2025-08-18T17:42:59.086Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://qraptor.ai/a2hackfest/</loc>
-    <lastmod>2025-08-18T17:11:14.363Z</lastmod>
+    <lastmod>2025-08-18T17:42:59.086Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://qraptor.ai/docs/platform-overview/o-view/overview-page/</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://qraptor.ai/docs/platform-overview/audit/audit-page/</loc>
@@ -83,6 +89,18 @@
     <lastmod>2025-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://qraptor.ai/docs/agent-nodes/google-nodes/google-sheets-reader/</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://qraptor.ai/docs/agent-nodes/google-nodes/google-sheets-writer/</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://qraptor.ai/docs/agent-nodes/control-nodes/break/</loc>

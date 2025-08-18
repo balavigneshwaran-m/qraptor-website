@@ -10,6 +10,28 @@
       "type": "folder",
       "children": [
         {
+          "id": "o-view",
+          "title": "overview",
+          "type": "folder",
+          "children": [
+            {
+            "id": "overview-page",
+            "title": "Overview",
+            "type": "file",
+            "path": "/Platform_Overview/Overview/Platform_Overview.md",
+            "description": "This article provides a complete overview of the platform, highlighting its key features and core capabilities for building and managing applications.",
+            "tags": [
+              "platform",
+              "overview",
+              "features"
+            ],
+            "lastUpdated": "2025-01-14",
+            "difficulty": "beginner",
+            "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
           "id": "audit",
           "title": "Audit",
           "type": "folder",
@@ -163,6 +185,43 @@
               "lastUpdated": "2025-08-01",
               "difficulty": "beginner",
               "estimatedReadTime": "5 min"
+            }
+          ]
+        },
+        {
+          "id": "google-nodes",
+          "title": "Google Nodes",
+          "type": "folder",
+          "children": [
+            {
+              "id": "google-sheets-reader",
+              "title": "Google Sheets Reader",
+              "type": "file",
+              "path": "/Agent_Nodes/Google_Nodes/Google_Sheets_Reader/Google_Sheets_Reader.md",
+              "description": "The Google Sheets Reader node fetches and reads data directly from a Google Sheets workbook. It lets you choose the sheet, range, and rows to extract, saving results in variables for use in workflows. This is useful for reports, configurations, or workflows that depend on spreadsheet data.",
+              "tags": [
+                "google-sheets",
+                "data-fetch",
+                "automation"
+              ],
+              "lastUpdated": "2025-01-14",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "google-sheets-writer",
+              "title": "Google Sheets Writer",
+              "type": "file",
+              "path": "/Agent_Nodes/Google_Nodes/Google_Sheets_Writer/Google_Sheets_Writer.md",
+              "description": "The Google Sheets Writer node lets you insert or update data in a Google Sheets workbook. You can select the sheet, writing mode, start cell, and data source (manual or variable). It supports appending, overwriting, or clearing sheets, making it useful for logging, updating, or exporting results for reporting and collaboration.",
+              "tags": [
+                "google-sheets",
+                "data-write",
+                "automation"
+              ],
+              "lastUpdated": "2025-01-14",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
             }
           ]
         },

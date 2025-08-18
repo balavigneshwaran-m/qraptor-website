@@ -12,6 +12,17 @@ The **Script** node allows you to execute custom code within your workflow using
 - Can access flow variables using `input_variables['variable_name']` syntax  
 - Returns the result of the code execution (if desired), to be stored in a variable for later use  
 
+**Note**:
+
+Currently, only **Python** programming language is supported in the Script Node.  
+Workflow variables can be accessed using the format:  
+ 
+```python
+input_variables['variable_name']
+```
+
+In the future, when more languages are supported, the syntax for accessing variables will vary depending on the chosen language.
+
 ---
 
 ### Configuration Details
@@ -29,18 +40,19 @@ Choose from supported languages via dropdown:
 - Write the code snippet directly in the built-in editor  
 - Use **workflow variables** inside the script by referencing `input_variables['variable_name']`  
 - Access to built-in functions and modules depending on language  
-- Supports inserting predefined code snippets for convenience  
-- **Output Mapping:**  
-  There is a reserved variable called `result` which is a dictionary. The keys of this dictionary represent the **output names** of the node, and the values represent the **corresponding output values**.  
-  To use this:
-  1. In your script, assign values to `result` keys, e.g.:
-     ```python
-     result['file_name'] = generated_filename
-     result['status'] = 'success'
-     ```
-  2. On the node interface, click **Add Output**, enter the **key name** used in `result` (e.g., `file_name`), and map it to a workflow variable.  
-  3. The mapped variable will then hold the value returned from the script for further use in downstream nodes.  
+- Supports inserting predefined code snippets for convenience
 
+**Note**:  
+- Currently, only the **Python** programming language is supported in the Script Node.  
+- To access workflow variables, use the format:  
+  ```python
+  your_input = input_variables['variable_name']
+  ```
+- For returning outputs, always store values inside the **`result`** dictionary.  
+- Do **not** use the `return` statement.  
+- Define keys inside the `result` dictionary for each output you want to capture. These keys will map to the output variables of the Script Node.  
+
+Example:
 
 ![ :( Can't load image ](/qdocs/Agent_Nodes/Automation/Script/Script_Node_Image_2.png)
 
@@ -60,7 +72,9 @@ Choose from supported languages via dropdown:
 ### Outputs
 
 - **Result:** Return value from the script  
-- **Storage:** Captured in a specified variable if configured  
+- **Storage:** Captured in a specified variable if configured
+
+![ :( Can't load image ](/qdocs/Agent_Nodes/Automation/Script/Script_Node_Image_3.png)
 
 ---
 
@@ -78,24 +92,26 @@ Use the Script node when you need to:
 
 ### Example Use Case
 
-#### Scenario: Generate Unique File Name
+#### Scenario: Generate Unique Folder Name
 
-**Goal:** Combine user ID and current timestamp to create a file name.
+**Goal:** Combine user ID and current timestamp to create a folder name.
 
 **Step 1: Script Node**
 - **Language:** Python  
 - **Script:**
   ```
-  userId = {{user_id}}
-  timestamp = Date.now()
-  return userId + timestamp
+  import datetime
+
+  result = {}
+
+  result['user_id_time_stamp'] = input_variables['user_id'] + datetime.datetime.now().timestamp()
   ```
+
+**Step 2**: Capture the **user_id_time_stamp** in **generated_filename** variable
 
 **Step 2: Create Folder Node**
 
-Uses generated_filename as the destination file name and create a file in DMS.
-
-
+Uses generated_filename as the destination foler name and create a folder in DMS.
 
 **Summary**
 
