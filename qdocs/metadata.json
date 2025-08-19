@@ -1372,6 +1372,21 @@
               "lastUpdated": "2025-08-01",
               "difficulty": "intermediate",
               "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "whatsapp-super-agent-config",
+              "title": "WhatsApp Bot Creation - Step 4: Super Agent Configuration",
+              "type": "file",
+              "path": "/App_Creation/WhatsApp/Whatsapp_Super_Agent_Config/whatsapp-super-agent.md",
+              "description": "This is the last step in creating a WhatsApp bot, where you configure the Super Agent. The Super Agent acts as an intelligent orchestrator, leveraging context, agent capabilities, training examples, and defined policies to determine whether a specialized agent should handle a user query or if it can respond directly.",
+              "tags": [
+                "whatsapp",
+                "super-agent",
+                "orchestration"
+              ],
+              "lastUpdated": "2025-01-14",
+              "difficulty": "advanced",
+              "estimatedReadTime": "20 min"
             }
           ]
         }
