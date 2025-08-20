@@ -44,11 +44,20 @@ No other setup is required.
 
 ## Outputs
 
-- **Flow Control Only**:  
-  Executes the connected nodes `n` times in order.  
-  It does **not** return or produce any variable output.
-
+- **Current Index**  
+  Stores the index of the item currently being traversed in the list.  
+  Map to the variable for later use. 
 ---
+
+## Important Note on Loop Control
+
+- To use the For (n) Node effectively, a Break Loop node is required.
+
+- The loop will continue executing all nodes placed between the For (n) node and the Break Loop node, until the iteration count you configured is completed.
+
+- The Break Loop node defines the end of the loop block.
+
+- Without the Break Loop node, the iteration cannot be properly terminated.
 
 ## When to Use
 
@@ -64,7 +73,7 @@ Use the **For (n) Node** when:
 
 ### Scenario
 
-A user doesn’t respond, so you want to **send a reminder message 3 times**, with a short delay between each.
+A user doesn’t respond, so you want to **send a reminder message 3 times**.
 
 ### Flow Steps
 
@@ -75,8 +84,11 @@ A user doesn’t respond, so you want to **send a reminder message 3 times**, wi
    - Input: `retryCount`
    - Connected to: `Send Teams Message` node
 
-3. **Delay Node (Optional)**  
-   - Add a wait time (e.g., 5 minutes) before the next reminder
+3. **Send Teams Message**  
+   - Sends the notification each time the loop runs
+
+4. **Break Loop Node**
+   - Ends the loop block after the configured iterations
 
 4. **Merge or Continue Flow**  
    - Once all iterations are complete, continue to the next action
@@ -87,4 +99,4 @@ A user doesn’t respond, so you want to **send a reminder message 3 times**, wi
 
 - Reads a **number**
 - Runs the **same workflow path** multiple times
-- Simple, reliable looping for repetitive tasks
+- Useful for **retries**, **repeated notifications**, or **controlled iterations**

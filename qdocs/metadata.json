@@ -167,6 +167,28 @@
       "type": "folder",
       "children": [
         {
+          "id": "mcp",
+          "title": "MCP",
+          "type": "folder",
+          "children": [
+            {
+              "id": "mcp-client",
+              "title": "MCP Client",
+              "type": "file",
+              "path": "/Agent_Nodes/MCP/MCP_Client/MCP_Client.md",
+              "description": "The MCP Client node connects to an external MCP Server and allows workflows to fetch data or test tools exposed by that server. You can configure the server URL, select available tools, provide input parameters, and map outputs into variables for seamless integration.",
+              "tags": [
+                "mcp",
+                "integration",
+                "external-server"
+              ],
+              "lastUpdated": "2025-01-14",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
           "id": "jira-nodes",
           "title": "Jira Nodes",
           "type": "folder",

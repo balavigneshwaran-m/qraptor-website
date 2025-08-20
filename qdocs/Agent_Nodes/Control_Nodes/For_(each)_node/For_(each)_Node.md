@@ -20,8 +20,17 @@ When this node executes:
 - It **loops through each item**, executing the connected path once per item
 - Each loop runs **sequentially**, not in parallel
 - Each item is handled **individually**
-
 ---
+
+## Important Note on Loop Control
+
+- To use the For Each node effectively, a Break Loop node is required.
+
+- The loop will continue executing all nodes placed between the For Each node and the Break Loop node, until the entire input array has been traversed.
+
+- The Break Loop node defines the end of the loop block.
+
+- Without the Break Loop node, the traversal of the list cannot be properly terminated.
 
 ## Configuration Details
 
@@ -49,9 +58,13 @@ No additional setup is required beyond selecting the list variable.
 
 ## Outputs
 
-- **Flow Control Only**:  
-  Executes connected nodes once per item.  
-  Does **not** produce or return a variable by default.
+- **Current Index**  
+  Stores the index of the item currently being traversed in the list.  
+  Map to the variable for later use. 
+
+- **Current Value**  
+  Stores the actual value of the item currently being traversed in the list.  
+  Map to a variable for use in subsequent nodes.  
 
 ---
 

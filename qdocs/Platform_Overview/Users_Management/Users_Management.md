@@ -37,6 +37,30 @@ The **User Management** module allows portal_owner and portal_admin to manage us
 
 > The number of users that can be added depends on the subscription plan.
 
+## User Roles
+
+When adding a new user, you must assign a role to define their access level and permissions within the portal. This will help to work in collaboration.
+
+The available roles are:
+
+- **portal_admin**  
+  - Grants full administrative privileges.  
+  - Multiple users can be assigned as portal administrators.  
+
+- **portal_app_developer**  
+  - Provides access to develop, configure, and manage applications within the portal.
+  - A user assigned this role becomes a **collaborator**, enabling them to work in collaboration with other developers.
+  - The number of developers is limited by your subscription plan.  
+  - For example, if your subscription allows 2 developers, you can assign the **portal_app_developer** role to only 2 users.  
+
+- **portal_app_viewer**  
+  - Provides read-only access to the published applications/sites.  
+  - Users with only this role will **not** have access to the portal features (e.g., configuration, development, or management).  
+  - They can only access and use the published sites.  
+
+**Note:**  
+Roles must be carefully assigned to ensure compliance with your subscription limits and to provide appropriate access for each user.  
+
 ---
 
 # 3. Editing a User
