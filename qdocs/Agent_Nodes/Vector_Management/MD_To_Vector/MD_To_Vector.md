@@ -1,14 +1,14 @@
-### Node Guide: MD To Vector
+# Node Guide: MD To Vector
 
 ---
 
-### Overview
+## Overview
 
 The **MD To Vector** node allows you to process `.md` (Markdown) files by converting their content into **vector embeddings**. These vectors are stored in a **vector database collection** for downstream use in **semantic search**, **Q&A systems**, and **Retrieval-Augmented Generation (RAG)**.
 
 ---
 
-### What This Node Does
+## What This Node Does
 
 - Reads Markdown documents from a configured DMS source  
 - Chunks the content into manageable pieces  
@@ -17,7 +17,7 @@ The **MD To Vector** node allows you to process `.md` (Markdown) files by conver
 
 ---
 
-### Inputs
+## Inputs
 
 This node does **not take runtime inputs**, but uses the following **configuration fields**:
 
@@ -30,7 +30,7 @@ This node does **not take runtime inputs**, but uses the following **configurati
 
 ---
 
-### Outputs
+## Outputs
 
 - **No output variables**  
 - Embeddings are saved silently in the configured vector store collection  
@@ -38,9 +38,16 @@ This node does **not take runtime inputs**, but uses the following **configurati
 
 ---
 
-### Configuration Details
+## Configuration Details
 
-#### 1. **Embedding Model**
+**Note:**  
+ - The **MD to Vector** node should only be used on a **scheduled basis**.  
+ - To enable this, you must configure the **Start Node** with **Event Trigger type**.  
+ - For detailed instructions, please refer to the **Start Node** Document.  
+
+
+### 1. **Embedding Model**
+
 - Select from available global embedding model configurations
 (You must create a global configuration of type Embedding Model)  
 - **Required**
@@ -51,7 +58,7 @@ This node does **not take runtime inputs**, but uses the following **configurati
 
 ![ :( Can't load image ](/qdocs/Agent_Nodes/Vector_Management/MD_To_Vector/MD_To_Vector_Image_3.png)
 
-#### 2. **Documents**
+### 2. **Documents**
 - Select a global DMS configuration pointing to Markdown files  
 - Only `.md` files are processed
 
@@ -59,23 +66,23 @@ This node does **not take runtime inputs**, but uses the following **configurati
 
 ![ :( Can't load image ](/qdocs/Agent_Nodes/Vector_Management/MD_To_Vector/MD_To_Vector_Image_5.png)
 
-#### 3. **Collection Name**
+### 3. **Collection Name**
 - Name of the target vector collection
 
-#### 4. **Chunk Size**
+### 4. **Chunk Size**
 - Sets how many characters go into each chunk  
 - Example: `500`, `1000`, `1500`
 
-#### 5. **Chunk Overlap**
+### 5. **Chunk Overlap**
 - Number of overlapping characters between chunks  
 - Helps preserve semantic continuity  
 - Example: `150`
 
-#### 6. **Indexing Type**
+### 6. **Indexing Type**
 - **Upsert**: Adds new or updates existing chunks  
 - **Re-Index**: Clears existing and re-embeds all files
 
-#### 7. **Metadata Fields**
+### 7. **Metadata Fields**
 Optional metadata to attach to each vector:
 - `Tags`  
 - `File ID`  
@@ -87,7 +94,7 @@ Optional metadata to attach to each vector:
 
 ---
 
-### When to Use
+## When to Use
 
 Use the **MD To Vector** node if you want to:
 - Turn Markdown documentation into a **semantic knowledge base**  
@@ -97,9 +104,9 @@ Use the **MD To Vector** node if you want to:
 
 ---
 
-### Example Use Case
+## Example Use Case
 
-#### Scenario: Index Developer Docs
+### Scenario: Index Developer Docs
 
 **Steps:**
 1. Markdown docs (e.g., `README.md`, `api-guide.md`) uploaded into DMS  
@@ -113,7 +120,7 @@ Use the **MD To Vector** node if you want to:
 
 ---
 
-### Summary
+## Summary
 
 The **MD To Vector** node enables you to convert Markdown files into searchable embeddings. It supports robust configurations for chunking, metadata, and model selection — perfect for building intelligent knowledge workflows.
 

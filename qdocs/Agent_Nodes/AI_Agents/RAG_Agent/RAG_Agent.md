@@ -59,6 +59,13 @@ By combining similarity-based document retrieval with natural language generatio
 
 - **Query:** User question (static or from variable, e.g., `{{user_question}}`)
 - **Collection Name:** Name of the vector DB collection to search (`{{collection_name}}`)
+
+**Note:**  
+The **MD to Vector** or **PDF To vector** node converts markdown content into vector embeddings.  
+These embeddings are stored inside a **collection**.  
+While configuring the **RAG Agent**, you must provide the **same collection name** so the agent can retrieve and use the stored vector content effectively.  
+
+
 - **Similarity Search K Value:** Number of top results to return (default: `1`)
 - **Similarity Score Threshold:** Min similarity (0.0–1.0; default: `0.3`)
 

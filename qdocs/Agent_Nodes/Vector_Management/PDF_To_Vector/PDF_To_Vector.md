@@ -1,20 +1,20 @@
-### Node Guide: PDF To Vector
+# Node Guide: PDF To Vector
 
 ---
 
-### Overview
+## Overview
 The **PDF To Vector** node enables intelligent document processing by converting PDF files into **vector embeddings**. These embeddings power **semantic search**, **document Q&A**, and **Retrieval-Augmented Generation (RAG)** use cases by storing data in a vector database.
 
 ---
 
-### What This Node Does
+## What This Node Does
 - Processes and chunks content from selected PDF documents  
 - Converts those chunks into vector embeddings using an **embedding model**  
 - Stores the vectors into a specified **collection** in your vector database  
 
 ---
 
-### Inputs
+## Inputs
 
 This node is **configured via form fields**, not runtime inputs:
 - Embedding model (required)
@@ -26,7 +26,7 @@ This node is **configured via form fields**, not runtime inputs:
 
 ---
 
-### Outputs
+## Outputs
 
 - **No direct output variables**  
 - All embeddings are stored silently into the configured collection  
@@ -34,9 +34,14 @@ This node is **configured via form fields**, not runtime inputs:
 
 ---
 
-### Configuration Details
+## Configuration Details
 
-#### 1. **Embedding Model**
+**Note:**  
+ - The **PDF to Vector** node should only be used on a **scheduled basis**.  
+ - To enable this, you must configure the **Start Node** with **Event Trigger type**.  
+ - For detailed instructions, please refer to the **Start Node** Document. 
+
+### 1. **Embedding Model**
 - Select from available global embedding model configurations
 (You must create a global configuration of type Embedding Model)
 - **Required**
@@ -47,7 +52,7 @@ This node is **configured via form fields**, not runtime inputs:
 
 ![ :( Can't load image ](/qdocs/Agent_Nodes/Vector_Management/PDF_To_Vector/PDF_To_Vector_Image_3.png)
 
-#### 2. **Documents**
+### 2. **Documents**
 - Choose a globally defined **DMS configuration** as the source  
 - Should point to one or more PDF files
 
@@ -55,24 +60,24 @@ This node is **configured via form fields**, not runtime inputs:
 
 ![ :( Can't load image ](/qdocs/Agent_Nodes/Vector_Management/PDF_To_Vector/PDF_To_Vector_Image_5.png)
 
-#### 3. **Collection Name**
+### 3. **Collection Name**
 - Name of the vector store collection where embeddings will be saved  
 - Can be static (typed) or dynamic (from variable)  
 
-#### 4. **Chunk Size**
+### 4. **Chunk Size**
 - Number of characters per chunk  
 - Typical values: `500`, `1000`, `1500`  
 
-#### 5. **Chunk Overlap**
+### 5. **Chunk Overlap**
 - Number of overlapping characters between chunks  
 - Preserves context across chunks  
 - Example: 150 overlap for a 1000-character chunk  
 
-#### 6. **Indexing Type**
+### 6. **Indexing Type**
 - **Upsert**: Add/update only new content  
 - **Re-Index**: Clear and reprocess entire collection  
 
-#### 7. **Metadata Fields**
+### 7. **Metadata Fields**
 Select from options to attach as metadata with each vector:
 - `Tags`  
 - `File ID`  
@@ -84,7 +89,7 @@ Select from options to attach as metadata with each vector:
 
 ---
 
-### When to Use
+## When to Use
 
 Use **PDF To Vector** when you want to:
 - Build **semantic search** on top of your documents  
@@ -94,9 +99,9 @@ Use **PDF To Vector** when you want to:
 
 ---
 
-### Example Use Case
+## Example Use Case
 
-#### Scenario: Legal Document Knowledge Base
+### Scenario: Legal Document Knowledge Base
 
 **Flow Steps:**
 1. **Upload PDFs** to DMS  
@@ -111,8 +116,6 @@ Use **PDF To Vector** when you want to:
 
 ---
 
-### Summary
+## Summary
 
 The **PDF To Vector** node is essential for document intelligence workflows. It embeds and stores PDF content as searchable vectors, making your documents ready for high-quality semantic retrieval and AI interaction.
-
-Let me know if you’d like examples of chunk configuration, model comparison, or how to connect this with a retrieval-enabled Prompt LLM node.
