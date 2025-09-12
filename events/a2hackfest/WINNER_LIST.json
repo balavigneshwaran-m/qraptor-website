@@ -39,7 +39,7 @@
     "proposedSolution": "Aegis is an AI-native platform that transforms emergency management from a reactive system into a proactive, intelligent, and resilient ecosystem. It leverages a suite of specialized machine learning models to manage the entire lifecycle of an emergency. The platform consists of a single, unified web application that provides a simple Citizen SOS interface for the public and a comprehensive Authority Command Center for officials, determined by a role-based login. Powered by a serverless Firebase backend, Aegis uses AI to provide real-time intelligence for a faster, smarter, and more equitable response.",
     "winnerAward": "",
     "internship": false,
-    "top20": false
+    "top20": true
   },
   {
     "participanths": [
@@ -178,7 +178,7 @@
     "top20": false
   },
   {
-    "participanths": ["AnishaShankar","TejasGadge"],
+    "participanths": ["Anisha Shankar","Tejas Gadge"],
     "top10": true,
     "problemStatement": "Most commuters avoid downloading yet another app just for metro information, and while Mumbai already has m-indicator & Yatri App, it primarily caters to local train travelers, leaving metro users underserved. At the same time, the Mumbai Metro does offer a WhatsApp-based fare and ticket booking bot, but it lacks crucial features like timetables, route details, and station information. This creates a clear gap — despite having digital tools in place, metro commuters still don’t have a simple, all-in-one solution for journey planning. Our challenge is to bridge this gap by integrating essential metro information seamlessly into WhatsApp, where users are already active, removing the barrier of app installs while complementing existing systems.",
     "top50": true,
@@ -186,7 +186,7 @@
       "/events/a2hackfest/Team_INSPIRE/AnishaShankar.jpg",
       "/events/a2hackfest/Team_INSPIRE/TejasGadge.jpg"
     ],
-    "team_name": "Team INSPIRE",
+    "team_name": "INSPIRE",
     "isWinner": true,
     "domain": "Transportation/Public Transit (Mumbai Metro)",
     "projectDescription": "",
@@ -247,7 +247,7 @@
   },
   {
     "participanths": [
-      "shivam mahendru"
+      "Shivam Mahendru"
     ],
     "top10": true,
     "problemStatement": "brands can't find the perfect fit of influencer for promoting their products/campaigns which leads to money being waste on influencers with less ROI. Also lack of all in one ai driven platform for digital and influencer marketing and data going unmanaged.",
@@ -420,7 +420,7 @@
     ],
     "team_name": "FLAVONA",
     "isWinner": false,
-    "domain": "Food Technology/Restaurant Technology",
+    "domain": "Food Industry",
     "projectDescription": "",
     "videoLink": "https://www.youtube.com/watch?v=dh1eHrPt940",
     "projectName": "",
