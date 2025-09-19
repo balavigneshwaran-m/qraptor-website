@@ -1141,7 +1141,7 @@
                       "id": "remote-script",
                       "title": "Remote Script Node",
                       "type": "file",
-                      "path": "/Remote_Script_Execution/RemotePyScript/RemotePYScript.md",
+                      "path": "/Remote_Script_Execution/RemotePyScript/RemotePyScript.md",
                       "description": "This article describes how to use the Remote Script Node within agents to execute scripts on remote executors and integrate results seamlessly into workflows.",
                       "tags": [
                           "script",
