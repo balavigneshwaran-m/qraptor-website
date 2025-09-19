@@ -12,7 +12,7 @@ When an AI agent is executed, the platform securely communicates with the config
 
 This approach allows teams to maintain control over the runtime environment, scale execution capacity based on demand, and bring computation closer to their data sources or private networks.
 
-ℹ️ If you wish to run scripts directly within the qRaptor platform (sandboxed execution), refer to the [Script Execution Node documentation](/qdocs/Agent_Nodes/Automation/Script/Script.md).
+ℹ️ If you wish to run scripts directly within the qRaptor platform (sandboxed execution), refer to the [Script Execution Node documentation](/docs/agent-nodes/automation/script/).
 
 ---
 
@@ -28,7 +28,7 @@ The architecture involves four main components:
 
 - **q-RemoteXGW (Execution Gateway)**: The gateway service that exposes the qRaptor platform to remote executors. It acts as the secure communication channel between executors and the platform, ensuring reliable message flow.
 
-![:( Can't load image](/qdocs/Remote_Script_Execution/Overview/remotex.gif)
+![q-RemoteX Architecture](/qdocs/Remote_Script_Execution/Overview/remotex.gif)
 
 ---
 

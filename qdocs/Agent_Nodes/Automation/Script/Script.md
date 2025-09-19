@@ -99,7 +99,7 @@ Use the Script node when you need to:
 **Step 1: Script Node**
 - **Language:** Python  
 - **Script:**
-  ```
+  ```python
   import datetime
 
   result = {}

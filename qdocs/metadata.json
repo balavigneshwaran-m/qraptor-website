@@ -1138,7 +1138,7 @@
               "type": "folder",
               "children": [
                   {
-                      "id": "remote-script",
+                      "id": "remote-script-node",
                       "title": "Remote Script Node",
                       "type": "file",
                       "path": "/Remote_Script_Execution/RemotePyScript/RemotePyScript.md",
