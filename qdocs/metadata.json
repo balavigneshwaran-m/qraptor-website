@@ -1,0 +1,1492 @@
+{
+  "title": "qRaptor Documentation",
+  "description": "Everything you need to build amazing agent-native AI applications with qRaptor",
+  "version": "2.0",
+  "lastUpdated": "2025-01-15",
+  "structure": [
+    {
+      "id": "platform-overview",
+      "title": "Platform Overview",
+      "type": "folder",
+      "children": [
+        {
+          "id": "o-view",
+          "title": "overview",
+          "type": "folder",
+          "children": [
+            {
+            "id": "overview-page",
+            "title": "Overview",
+            "type": "file",
+            "path": "/Platform_Overview/Overview/Platform_Overview.md",
+            "description": "This article provides a complete overview of the platform, highlighting its key features and core capabilities for building and managing applications.",
+            "tags": [
+              "platform",
+              "overview",
+              "features"
+            ],
+            "lastUpdated": "2025-01-14",
+            "difficulty": "beginner",
+            "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "audit",
+          "title": "Audit",
+          "type": "folder",
+          "children": [
+            {
+            "id": "audit-page",
+            "title": "Audit Page",
+            "type": "file",
+            "path": "/Platform_Overview/Audit/Audit.md",
+            "description": "The Audit Page offers a centralized dashboard to monitor application performance, track agent activities, and review chat statistics. It helps maintain oversight, understand user interactions, and ensure optimal performance across deployed solutions.",
+            "tags": [
+              "audit",
+              "monitoring",
+              "analytics",
+              "performance"
+            ],
+            "lastUpdated": "2025-01-14",
+            "difficulty": "beginner",
+            "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "data-vault",
+          "title": "Data Vault",
+          "type": "folder",
+          "children": [
+            {
+            "id": "manage-entity",
+            "title": "Manage Entity",
+            "type": "file",
+            "path": "/Platform_Overview/Data_Vault/Manage_Entity/Manage_Entity.md",
+            "description": "The Manage Entity feature lets you visually design and manage your application's data models without writing SQL. You can create tables, define relationships, and import data from Excel, mirroring a PostgreSQL structure for seamless integration with apps, APIs, and reports.",
+            "tags": [
+              "entity",
+              "database",
+              "data-model",
+              "postgresql"
+            ],
+            "lastUpdated": "2025-01-14",
+            "difficulty": "beginner",
+            "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "manage-document",
+              "title": "Manage Document",
+              "type": "file",
+              "path": "/Platform_Overview/Data_Vault/Manage_Document/Manage_Document.md",
+              "description": "The Manage Document feature provides a Document Management System (DMS) to organize, manage, and interact with files and folders. It supports full CRUD operations, allows document previews, and enables uploads within your subscription's storage limits.",
+              "tags": [
+                "document-management",
+                "dms",
+                "files",
+                "folders"
+              ],
+              "lastUpdated": "2025-01-14",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "roles management",
+          "title": "Roles Management",
+          "type": "folder",
+          "children": [
+            {
+              "id": "role-management",
+              "title": "Role Management",
+              "type": "file",
+              "path": "/Platform_Overview/Roles_Management/role_management.md",
+              "description": "The Role Management module enables portal owners and admins to create, manage, and assign roles for users across the platform, ensuring role-based access control where needed.",
+              "tags": [
+                "role-management",
+                "access-control",
+                "user-roles"
+              ],
+              "lastUpdated": "2025-01-14",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "super agent",
+          "title": "Super Agent",
+          "type": "folder",
+          "children": [
+            {
+              "id": "super-agent",
+              "title": "Super-Agent",
+              "type": "file",
+              "path": "/Platform_Overview/Super_Agent/Super_Agent.md",
+              "description": "The Super Agent acts as a central orchestrator for chatbot, voicebot, WhatsApp bot, and Teams bot applications. It uses conversation history, agent capabilities, few-shot training, and configured policies to decide whether to respond directly or route the query to the most suitable specialized agent.",
+              "tags": [
+                "super-agent",
+                "orchestration",
+                "multi-channel"
+              ],
+              "lastUpdated": "2025-01-14",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "users-management",
+          "title": "Users Management",
+          "type": "folder",
+          "children": [
+            {
+              "id": "user-management",
+              "title": "User Management",
+              "type": "file",
+              "path": "/Platform_Overview/Users_Management/Users_Management.md",
+              "description": "The Users Management module enables portal_owner and portal_admin to oversee and control user accounts within their subscription. Depending on assigned access, they can view, add, edit, and remove users from the system.",
+              "tags": [
+                "user-management",
+                "access-control",
+                "administration"
+              ],
+              "lastUpdated": "2025-01-14",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agent-nodes",
+      "title": "Agent Nodes",
+      "type": "folder",
+      "children": [
+        {
+          "id": "mcp",
+          "title": "MCP",
+          "type": "folder",
+          "children": [
+            {
+              "id": "mcp-client",
+              "title": "MCP Client",
+              "type": "file",
+              "path": "/Agent_Nodes/MCP/MCP_Client/MCP_Client.md",
+              "description": "The MCP Client node connects to an external MCP Server and allows workflows to fetch data or test tools exposed by that server. You can configure the server URL, select available tools, provide input parameters, and map outputs into variables for seamless integration.",
+              "tags": [
+                "mcp",
+                "integration",
+                "external-server"
+              ],
+              "lastUpdated": "2025-01-14",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "jira-nodes",
+          "title": "Jira Nodes",
+          "type": "folder",
+          "children": [
+            {
+              "id": "jira-node",
+              "title": "Jira Node",
+              "type": "file",
+              "path": "/Agent_Nodes/Jira_Nodes/Jira_Node.md",
+              "description": "Used to interact with Jira for tasks such as creating, updating, or retrieving issues within a workflow.",
+              "tags": [
+                "jira",
+                "integration",
+                "issues"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "5 min"
+            }
+          ]
+        },
+        {
+          "id": "google-nodes",
+          "title": "Google Nodes",
+          "type": "folder",
+          "children": [
+            {
+              "id": "google-sheets-reader",
+              "title": "Google Sheets Reader",
+              "type": "file",
+              "path": "/Agent_Nodes/Google_Nodes/Google_Sheets_Reader/Google_Sheets_Reader.md",
+              "description": "The Google Sheets Reader node fetches and reads data directly from a Google Sheets workbook. It lets you choose the sheet, range, and rows to extract, saving results in variables for use in workflows. This is useful for reports, configurations, or workflows that depend on spreadsheet data.",
+              "tags": [
+                "google-sheets",
+                "data-fetch",
+                "automation"
+              ],
+              "lastUpdated": "2025-01-14",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "google-sheets-writer",
+              "title": "Google Sheets Writer",
+              "type": "file",
+              "path": "/Agent_Nodes/Google_Nodes/Google_Sheets_Writer/Google_Sheets_Writer.md",
+              "description": "The Google Sheets Writer node lets you insert or update data in a Google Sheets workbook. You can select the sheet, writing mode, start cell, and data source (manual or variable). It supports appending, overwriting, or clearing sheets, making it useful for logging, updating, or exporting results for reporting and collaboration.",
+              "tags": [
+                "google-sheets",
+                "data-write",
+                "automation"
+              ],
+              "lastUpdated": "2025-01-14",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "control-nodes",
+          "title": "Control Nodes",
+          "type": "folder",
+          "children": [
+            {
+              "id": "break",
+              "title": "Break",
+              "type": "file",
+              "path": "/Agent_Nodes/Control_Nodes/Break/Break.md",
+              "description": "The Break node defines the end boundary of a loop path initiated by For(n) or For(each) nodes. It is used to immediately exit the current loop based on a condition.",
+              "tags": [
+                "loop",
+                "control",
+                "exit"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "10 min"
+            },
+            {
+              "id": "condition",
+              "title": "Condition",
+              "type": "file",
+              "path": "/Agent_Nodes/Control_Nodes/Condition/Condition.md",
+              "description": "Evaluates logical expressions and routes the workflow based on whether the condition is true or false.",
+              "tags": [
+                "condition",
+                "logic",
+                "branching"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "10 min"
+            },
+            {
+              "id": "for_each_node",
+              "title": "For Each Node",
+              "type": "file",
+              "path": "/Agent_Nodes/Control_Nodes/For_(each)_node/For_(each)_Node.md",
+              "description": "Iterates through items in a list, executing the same workflow logic for each item individually.",
+              "tags": [
+                "foreach",
+                "list",
+                "loop"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "10 min"
+            },
+            {
+              "id": "merge",
+              "title": "Merge",
+              "type": "file",
+              "path": "/Agent_Nodes/Control_Nodes/Merge/Merge.md",
+              "description": "Used to merge branches that were previously split by parallel or conditional nodes, continuing the flow after synchronization.",
+              "tags": [
+                "merge",
+                "sync",
+                "combine"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "10 min"
+            },
+            {
+              "id": "for-n-node",
+              "title": "For n Node",
+              "type": "file",
+              "path": "/Agent_Nodes/Control_Nodes/For_(n)_node/For_(n)_Node.md",
+              "description": "Loops through a specific number of iterations, useful when you want to repeat an action a fixed number of times.",
+              "tags": [
+                "loop",
+                "for",
+                "iteration"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "10 min"
+            },
+            {
+              "id": "parallel",
+              "title": "Parallel",
+              "type": "file",
+              "path": "/Agent_Nodes/Control_Nodes/Parallel/Parallel.md",
+              "description": "Executes multiple branches or tasks in parallel, enabling concurrent operations within your workflow.",
+              "tags": [
+                "parallel",
+                "async",
+                "multitask"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "10 min"
+            },
+            {
+            "id": "switch",
+            "title": "Switch",
+            "type": "file",
+            "path": "/Agent_Nodes/Control_Nodes/Switch/Switch.md",
+            "description": "Enables branching into multiple paths based on specific values or cases, similar to a switch-case in programming.",
+            "tags": [
+                "switch",
+                "branch",
+                "routing"
+            ],
+            "lastUpdated": "2025-08-01",
+            "difficulty": "beginner",
+            "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "automation",
+          "title": "Automation",
+          "type": "folder",
+          "children": [
+            {
+              "id": "script",
+              "title": "Script",
+              "type": "file",
+              "path": "/Agent_Nodes/Automation/Script/Script.md",
+              "description": "Executes custom code snippets in various languages like JavaScript, Python, Java, or C++. Allows dynamic logic execution within the workflow and supports variable usage and result storage.",
+              "tags": [
+                "code",
+                "custom",
+                "automation"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "ai-agents",
+          "title": "AI Agents",
+          "type": "folder",
+          "children": [
+            {
+                "id": "agent-executor",
+                "title": "Agent Executor",
+                "type": "file",
+                "path": "/Agent_Nodes/AI_Agents/Agent_Executor/Agent_Executor.md",
+                "description": "Execute another agent from a different application and reuse its capabilities in the current workflow.",
+                "tags": [
+                    "agent",
+                    "reusability",
+                    "automation"
+                ],
+                "lastUpdated": "2025-08-01",
+                "difficulty": "intermediate",
+                "estimatedReadTime": "15 min"
+            },
+            {
+                "id": "prompt-your-llm",
+                "title": "Prompt Your LLM",
+                "type": "file",
+                "path": "/Agent_Nodes/AI_Agents/Prompt_your_llm/Prompt_Your_LLM.md",
+                "description": "Send a custom or preconfigured prompt to the LLM and retrieve its generated output for downstream use.",
+                "tags": [
+                    "llm",
+                    "prompt",
+                    "ai"
+                ],
+                "lastUpdated": "2025-08-01",
+                "difficulty": "beginner",
+                "estimatedReadTime": "15 min"
+            },
+            {
+                "id": "eda-agent",
+                "title": "EDA Agent",
+                "type": "file",
+                "path": "/Agent_Nodes/AI_Agents/EDA_Agent/EDA_Agent.md",
+                "description": "Perform Exploratory Data Analysis (EDA) using a large language model on structured data with schema, few-shot examples, and custom instructions.",
+                "tags": [
+                    "EDA",
+                    "data-analysis",
+                    "LLM",
+                    "chart-generation",
+                    "text-summary"
+                ],
+                "lastUpdated": "2025-08-06",
+                "difficulty": "advanced",
+                "estimatedReadTime": "15 min"
+            },
+            {
+                "id": "rag-agent",
+                "title": "RAG Agent",
+                "type": "file",
+                "path": "/Agent_Nodes/AI_Agents/RAG_Agent/RAG_Agent.md",
+                "description": "Implement Retrieval-Augmented Generation (RAG) to enhance user queries with relevant document context from vector databases before generating responses using LLMs.",
+                "tags": [
+                    "RAG",
+                    "vector-search",
+                    "LLM",
+                    "retrieval",
+                    "semantic-search"
+                ],
+                "lastUpdated": "2025-08-06",
+                "difficulty": "advanced",
+                "estimatedReadTime": "15 min"
+            },
+            {
+                "id": "image-validator",
+                "title": "Image Validator",
+                "type": "file",
+                "path": "/Agent_Nodes/AI_Agents/Image_Validator/Image_Validator.md",
+                "description": "Scans images from a specified folder to detect the presence of specific objects, such as vehicles, people, buildings, or containers. Ideal for image verification workflows, quality assurance checks, and visual evidence validation processes.",
+                "tags": [
+                    "image-processing",
+                    "object-detection",
+                    "quality-check",
+                    "verification",
+                    "computer-vision"
+                ],
+                "lastUpdated": "2025-08-06",
+                "difficulty": "advanced",
+                "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "data-management",
+          "title": "Data Management",
+          "type": "folder",
+          "children": [
+            {
+                "id": "select-rows",
+                "title": "Select Rows",
+                "type": "file",
+                "path": "/Agent_Nodes/Data_Management/Select_Rows/Select_Rows.md",
+                "description": "The Select Rows node allows you to fetch data from tables in the Data Vault. It supports both SQL query mode and user-friendly UI mode, with capabilities to validate, test, and preview query results before executing the flow.",
+                "tags": [
+                    "data retrieval",
+                    "sql",
+                    "query"
+                ],
+                "lastUpdated": "2025-08-01",
+                "difficulty": "beginner",
+                "estimatedReadTime": "15 min"
+            },
+            {
+                "id": "update-row",
+                "title": "Update Row",
+                "type": "file",
+                "path": "/Agent_Nodes/Data_Management/Update_Row/Update_Row.md",
+                "description": "Update one or more records in a database table based on dynamic match conditions and column values.",
+                "tags": [
+                    "update",
+                    "database",
+                    "row"
+                ],
+                "lastUpdated": "2025-08-01",
+                "difficulty": "intermediate",
+                "estimatedReadTime": "15 min"
+            },
+            {
+                "id": "insert-multiple-rows",
+                "title": "Insert Multiple Rows",
+                "type": "file",
+                "path": "/Agent_Nodes/Data_Management/Insert_Multiple_Rows/Insert_Multiple_Row.md",
+                "description": "Insert multiple records at once into a database table by passing a list of row objects via an agent variable.",
+                "tags": [
+                    "bulk",
+                    "data",
+                    "insert"
+                ],
+                "lastUpdated": "2025-08-01",
+                "difficulty": "intermediate",
+                "estimatedReadTime": "15 min"
+            },
+            {
+                "id": "insert-row",
+                "title": "Insert Row",
+                "type": "file",
+                "path": "/Agent_Nodes/Data_Management/Insert_Row/Insert_Row.md",
+                "description": "Insert a single record into a selected table using static values or dynamic variables within your workflow.",
+                "tags": [
+                    "database",
+                    "insert",
+                    "record"
+                ],
+                "lastUpdated": "2025-08-01",
+                "difficulty": "beginner",
+                "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "dms-nodes",
+          "title": "DMS Nodes",
+          "type": "folder",
+          "children": [
+            {
+                "id": "create-folder",
+                "title": "Create Folder",
+                "type": "file",
+                "path": "/Agent_Nodes/Dms_Nodes/Create_Folder_DMS/Create_Folder_(DMS).md",
+                "description": "Used to dynamically create a folder in the Document Management System (DMS) to organize files per user, case, or workflow instance.",
+                "tags": [
+                    "dms",
+                    "folder",
+                    "storage"
+                ],
+                "lastUpdated": "2025-08-01",
+                "difficulty": "beginner",
+                "estimatedReadTime": "15 min"
+            },
+            {
+                "id": "move-from-temp-folder",
+                "title": "Move From Temp Folder",
+                "type": "file",
+                "path": "/Agent_Nodes/Dms_Nodes/Move_from_Temp_Folder_(DMS)/Move_from_Temp_Folder_(DMS).md",
+                "description": "Moves uploaded or temporary files from the default temp storage to a permanent folder in the Document Management System (DMS).",
+                "tags": [
+                    "dms",
+                    "file-move",
+                    "storage"
+                ],
+                "lastUpdated": "2025-08-01",
+                "difficulty": "beginner",
+                "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "vector-management",
+          "title": "Vector Management",
+          "type": "folder",
+          "children": [
+            {
+                "id": "md-to-vector",
+                "title": "MD To Vector",
+                "type": "file",
+                "path": "/Agent_Nodes/Vector_Management/MD_To_Vector/MD_To_Vector.md",
+                "description": "The MD To Vector node processes Markdown files by converting them into vector embeddings and storing them in a vector database. It supports chunking, metadata tagging, and intelligent indexing for use in AI-powered search and RAG workflows.",
+                "tags": [
+                    "markdown",
+                    "vectorization",
+                    "embedding"
+                ],
+                "lastUpdated": "2025-08-01",
+                "difficulty": "beginner",
+                "estimatedReadTime": "15 min"
+            },
+            {
+                "id": "pdf-to-vector",
+                "title": "PDF To Vector",
+                "type": "file",
+                "path": "/Agent_Nodes/Vector_Management/PDF_To_Vector/PDF_To_Vector.md",
+                "description": "The PDF To Vector node converts PDF documents into vector embeddings and stores them in a vector database. It supports chunking, metadata tagging, and indexing for use in AI-driven document search and RAG-based systems.",
+                "tags": [
+                    "vectorization",
+                    "embedding",
+                    "documents"
+                ],
+                "lastUpdated": "2025-08-01",
+                "difficulty": "beginner",
+                "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "user-tasks",
+          "title": "User Tasks",
+          "type": "folder",
+          "children": [
+            {
+            "id": "generic-user-input",
+            "title": "Generic User Input",
+            "type": "file",
+            "path": "/Agent_Nodes/User_Tasks/Generic_User_Input/Generic_User_Input.md",
+            "description": "Captures user input at any point in the workflow and stores it in a variable, halting the flow until input is received or a timeout occurs.",
+            "tags": [
+                "input",
+                "user",
+                "wait"
+            ],
+            "lastUpdated": "2025-08-01",
+            "difficulty": "beginner",
+            "estimatedReadTime": "15 min"
+            },
+            {
+            "id": "user-input-form",
+            "title": "User Input Form",
+            "type": "file",
+            "path": "/Agent_Nodes/User_Tasks/User_Input_Form/User_Input_Form.md",
+            "description": "Displays a form interface for users to input multiple fields at once, with support for various field types and dynamic data binding.",
+            "tags": [
+                "form",
+                "user",
+                "input"
+            ],
+            "lastUpdated": "2025-08-01",
+            "difficulty": "beginner",
+            "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "whatsapp-nodes",
+          "title": "WhatsApp Nodes",
+          "type": "folder",
+          "children": [
+            {
+              "id": "send-message-whatsapp",
+              "title": "Send Message",
+              "type": "file",
+              "path": "/Agent_Nodes/Whatsapp_Nodes/Send_Message_Whatsapp/Send_Message_WhatsApp.md",
+              "description": "Sends a plain text WhatsApp message to a user. Commonly used for simple alerts, notifications, or confirmations.",
+              "tags": [
+                "whatsapp",
+                "message",
+                "notification"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "whatsapp-send-message-template",
+              "title": "WhatsApp Send Message Template",
+              "type": "file",
+              "path": "/Agent_Nodes/Whatsapp_Nodes/Send_Message_template_WhatsApp/WhatsApp_Send_Template_Node.md",
+              "description": "Enables your agent to send a pre-approved WhatsApp template message to the user. This is especially useful for scenarios where you need to send structured, form-like messages — for example, confirmations, reminders, or notifications with placeholders for dynamic content.",
+              "tags": [
+                "whatsapp",
+                "template-message",
+                "notification",
+                "dynamic-content"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "teams-nodes",
+          "title": "Teams Nodes",
+          "type": "folder",
+          "children": [
+            {
+              "id": "message-card-template",
+              "title": "Message Card Template",
+              "type": "file",
+              "path": "/Agent_Nodes/Teams_Nodes/Message_Card_Template_Teams/Message_Card_Template_Teams.md",
+              "description": "Sends a structured and formatted message using Teams message card templates. Ideal for displaying interactive content or summaries.",
+              "tags": [
+                "teams",
+                "card",
+                "template"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "send-message-teams",
+              "title": "Send Message",
+              "type": "file",
+              "path": "/Agent_Nodes/Teams_Nodes/Teams_send_message/Send_Message_Teams.md",
+              "description": "Sends a plain text message to a Microsoft Teams channel or user. Useful for simple notifications or updates from workflows.",
+              "tags": [
+                "teams",
+                "message",
+                "notification"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "json-mapper",
+          "title": "JSON Mapper",
+          "type": "folder",
+          "children": [
+            {
+              "id": "jsonmapper",
+              "title": "Json Mapper",
+              "type": "file",
+              "path": "/Agent_Nodes/JSON_Mapper/JSON_Mapper.md",
+              "description": "Transforms or maps JSON data from one structure to another using a visual or key-based mapping system. Ideal for reformatting data between nodes or APIs.",
+              "tags": [
+                "json",
+                "transform",
+                "map"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "api-operations",
+          "title": "API Operations",
+          "type": "folder",
+          "children": [
+            {
+              "id": "delete-api",
+              "title": "DELETE API",
+              "type": "file",
+              "path": "/Agent_Nodes/Api_Operations/DELETE_API/DELETE_API.md",
+              "description": "Sends an HTTP DELETE request to remove records from an external API. Best used for deletion operations in integrated systems.",
+              "tags": [
+                "api",
+                "delete",
+                "remove"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "get-api",
+              "title": "GET API",
+              "type": "file",
+              "path": "/Agent_Nodes/Api_Operations/GET_API/GET_API.md",
+              "description": "Performs an HTTP GET request to retrieve data from an external API. Useful for fetching remote data to be used within the workflow.",
+              "tags": [
+                "api",
+                "get",
+                "fetch"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "post-api",
+              "title": "POST API",
+              "type": "file",
+              "path": "/Agent_Nodes/Api_Operations/POST_API/POST_API.md",
+              "description": "Executes an HTTP POST request to send data to an external service. Ideal for creating new records or triggering external workflows.",
+              "tags": [
+                "api",
+                "post",
+                "request"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "put-api",
+              "title": "PUT API",
+              "type": "file",
+              "path": "/Agent_Nodes/Api_Operations/PUT_API/PUT_API.md",
+              "description": "Makes an HTTP PUT request to update existing data on a remote server. Use this node to modify records through API integration.",
+              "tags": [
+                "api",
+                "put",
+                "update"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "output-nodes",
+          "title": "Output Nodes",
+          "type": "folder",
+          "children": [
+            {
+              "id": "send-chart-data",
+              "title": "Send Chart Data",
+              "type": "file",
+              "path": "/Agent_Nodes/Output_Nodes/Send_Chart_Data/Send_Chart_Data.md",
+              "description": "Visualizes data using ECharts configurations such as bar, line, and pie charts with dynamic inputs.",
+              "tags": [
+                "charts",
+                "visualization",
+                "output"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "send-document-data",
+              "title": "Send Document Data",
+              "type": "file",
+              "path": "/Agent_Nodes/Output_Nodes/Send_Document_Data/Send_Document_Data.md",
+              "description": "Enables sending downloadable files by referencing document metadata stored in variables.",
+              "tags": [
+                "documents",
+                "output",
+                "download"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            },
+            {
+                "id": "send-table-data",
+                "title": "Send Table Data",
+                "type": "file",
+                "path": "/Agent_Nodes/Output_Nodes/Send_Table_Data/Send_Table_Data.md",
+                "description": "Displays structured tabular data by binding rows and columns from variables, useful for presenting results.",
+                "tags": [
+                  "table",
+                  "output",
+                  "data"
+                ],
+                "lastUpdated": "2025-08-01",
+                "difficulty": "beginner",
+                "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "send-text-data",
+              "title": "Send Text Data",
+              "type": "file",
+              "path": "/Agent_Nodes/Output_Nodes/Send_Text_Data/Send_Text_Data.md",
+              "description": "Displays plain or formatted text by combining static content and variable values.",
+              "tags": [
+                "text",
+                "output",
+                "display"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "email-nodes",
+          "title": "Email Nodes",
+          "type": "folder",
+          "children": [
+            {
+              "id": "read-imap-email",
+              "title": "Read IMAP E-Mail",
+              "type": "file",
+              "path": "/Agent_Nodes/Email_Nodes/Read_IMAP_Email/Read_IMAP_Email.md",
+              "description": "Fetches and processes emails using the IMAP protocol from configured mailboxes within your automation workflows.",
+              "tags": [
+                "imap",
+                "email",
+                "automation"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "send-smtp-email",
+              "title": "Send SMTP E-Mail",
+              "type": "file",
+              "path": "/Agent_Nodes/Email_Nodes/Send_SMTP_Email/Send_SMTP_Email.md",
+              "description": "Send emails using SMTP configuration with support for attachments, subject, HTML, and dynamic variables.",
+              "tags": [
+                "email",
+                "smtp",
+                "communication"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "read-o365-email",
+              "title": "Read O365 Email",
+              "type": "file",
+              "path": "/Agent_Nodes/Email_Nodes/Read_O365_Email/Read_O365_email.md",
+              "description": "Connects to an Office 365 mailbox via IMAP to fetch emails based on filters like sender, subject, or date range—ideal for monitoring and processing incoming messages.",
+              "tags": [
+                "email",
+                "o365",
+                "imap"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        },
+        {
+          "id": "document-ai",
+          "title": "Document AI",
+          "type": "folder",
+          "children": [
+            {
+              "id": "docs-to-mds",
+              "title": "Doc(s) To MD(s)",
+              "type": "file",
+              "path": "/Agent_Nodes/Document_AI/DOC(s)_To_MD(s)/Doc(s)_to_MD(s).md",
+              "description": "Converts one or multiple Word documents into Markdown, maintaining document structure and formatting.",
+              "tags": [
+                "doc",
+                "markdown",
+                "automation"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "excels-to-mds",
+              "title": "Excel(s) To MD(s)",
+              "type": "file",
+              "path": "/Agent_Nodes/Document_AI/Excel(s)_To_MD(s)/Excel(s)_to_MD(s).md",
+              "description": "Takes Excel files and converts their data into Markdown tables, supporting multiple sheets and formats.",
+              "tags": [
+                "excel",
+                "markdown",
+                "table"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "pdf-to-markdown",
+              "title": "PDF To Markdown",
+              "type": "file",
+              "path": "/Agent_Nodes/Document_AI/PDF_To_Markdown/PDF_to_Markdown.md",
+              "description": "Converts a single PDF document into a structured Markdown format, preserving hierarchy and text content.",
+              "tags": [
+                "pdf",
+                "markdown",
+                "conversion"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "pdfs-to-mds",
+              "title": "PDF(s) To MD(s)",
+              "type": "file",
+              "path": "/Agent_Nodes/Document_AI/PDF(s)_To_MD(s)/PDF(s)_to_MD(s).md",
+              "description": "Processes multiple PDFs and converts each into its own Markdown file, automating batch transformations.",
+              "tags": [
+                "batch",
+                "pdf",
+                "markdown"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "ppts-to-mds",
+              "title": "PPT(s) To MD(s)",
+              "type": "file",
+              "path": "/Agent_Nodes/Document_AI/PPT(s)_To_MD(s)/PPT(s)_to_MD(s).md",
+              "description": "Transforms one or more PowerPoint presentations into Markdown format, capturing slides and key content.",
+              "tags": [
+                "ppt",
+                "markdown",
+                "conversion"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "entity-extraction",
+              "title": "Entity Extraction",
+              "type": "file",
+              "path": "/Agent_Nodes/Document_AI/Entity_Extraction/Entity_Extraction.md",
+              "description": "The Entity Extraction node helps extract structured entities from unstructured content using LLMs. You can configure memory context, test the extraction process live, and store extracted entities dynamically for downstream use.",
+              "tags": [
+                "extraction",
+                "entities",
+                "llm"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            }
+
+          ]
+        },
+        {
+          "id": "claims-processing",
+          "title": "Claim Processing",
+          "type": "folder",
+          "children": [
+            {
+              "id": "claim-description-similarity-checker",
+              "title": "Claim Description Similarity Checker",
+              "type": "file",
+              "path": "/Agent_Nodes/Claims_Processing/Claim_Description_Similarity_Checker/Claim_Description_Similarity_Checker.md",
+              "description": "Analyzes new insurance claim descriptions for similarity against past claims to detect duplicates, near-duplicates, and potential fraud.",
+              "tags": [
+                "claims",
+                "similarity",
+                "fraud-detection"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "claim-image-description-similarity-checker",
+              "title": "Claim Image Description Similarity Checker",
+              "type": "file",
+              "path": "/Agent_Nodes/Claims_Processing/Claim_Image_Description_Similarity_Checker/Claim_Image_Description_Similarity_Checker.md",
+              "description": "Validates if a claim's written description matches its submitted images using AI-driven semantic checks, helping detect inconsistencies and prevent fraud.",
+              "tags": [
+                "claims",
+                "image-validation",
+                "fraud-detection"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "duplicate-claim-checker",
+              "title": "Duplicate Claim Checker",
+              "type": "file",
+              "path": "/Agent_Nodes/Claims_Processing/Duplicate_Claim_Checker/Duplicate_Claim_Checker.md",
+              "description": "Detects previously submitted claims by comparing media files like images or documents, helping prevent fraud through automatic duplicate checks.",
+              "tags": [
+                "claims",
+                "duplicate-detection",
+                "fraud-prevention"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "remote-script-execution",
+      "title": "Remote Script Execution",
+      "type": "folder",
+      "children": [
+          {
+              "id": "qremotex",
+              "title": "Overview",
+              "type": "folder",
+              "children": [
+                  {
+                      "id": "q-RemoteX-overview",
+                      "title": "Overview",
+                      "type": "file",
+                      "path": "/Remote_Script_Execution/Overview/remote_script_execution_overview.md",
+                      "description": "This article introduces the Remote Script Execution feature, explaining its purpose, architecture, and the possibilities it unlocks for AI agent workflows.",
+                      "tags": [
+                          "remote",
+                          "script",
+                          "overview",
+                          "features"
+                      ],
+                      "lastUpdated": "2025-01-14",
+                      "difficulty": "beginner",
+                      "estimatedReadTime": "10 min"
+                  }
+              ]
+          },
+          {
+              "id": "executor-management",
+              "title": "Executor Management",
+              "type": "folder",
+              "children": [
+                  {
+                      "id": "executor-management-page",
+                      "title": "Executor Management Page",
+                      "type": "file",
+                      "path": "/Remote_Script_Execution/Executor_Management/ExecutorManagement.md",
+                      "description": "This article explains how to manage executors within qRaptor, including adding new executors, viewing details, and securely handling credentials.",
+                      "tags": [
+                          "executors",
+                          "script",
+                          "management"
+                      ],
+                      "lastUpdated": "2025-01-14",
+                      "difficulty": "beginner",
+                      "estimatedReadTime": "5 min"
+                  }
+              ]
+          },
+          {
+              "id": "remote-script",
+              "title": "Remote Script",
+              "type": "folder",
+              "children": [
+                  {
+                      "id": "remote-script",
+                      "title": "Remote Script Node",
+                      "type": "file",
+                      "path": "/Remote_Script_Execution/RemotePyScript/RemotePYScript.md",
+                      "description": "This article describes how to use the Remote Script Node within agents to execute scripts on remote executors and integrate results seamlessly into workflows.",
+                      "tags": [
+                          "script",
+                          "node",
+                          "remote"
+                      ],
+                      "lastUpdated": "2025-01-14",
+                      "difficulty": "beginner",
+                      "estimatedReadTime": "5 min"
+                  }
+              ]
+          }
+      ]
+  },
+    {
+      "id": "ui-nodes",
+      "title": "UI Nodes",
+      "type": "folder",
+      "children": [
+        {
+          "id": "dashboard",
+          "title": "Dashboard",
+          "type": "folder",
+          "children": [
+            {
+              "id": "card-component",
+              "title": "Card Component",
+              "type": "file",
+              "path": "/UI_Nodes/Dashboard/Card/Card.md",
+              "description": "A customizable dashboard component in Qraptor.ai used to display real-time numeric metrics with labels, icons, and dynamic data binding.",
+              "tags": ["dashboard", "ui", "metrics", "real-time", "component"],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "5 min"
+            },
+            {
+              "id": "line-chart",
+              "title": "Line Chart",
+              "type": "file",
+              "path": "/UI_Nodes/Dashboard/Line_Chart/Line_Chart.md",
+              "description": "The Line Chart in Qraptor.ai lets users visualize trends in time-series or category data with full styling options and dynamic data binding via agents.",
+              "tags": [
+                "line chart",
+                "visualization",
+                "dashboard",
+                "data binding"
+                
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "5 min"
+            },
+            {
+              "id": "bar-chart",
+              "title": "Bar Chart",
+              "type": "file",
+              "path": "/UI_Nodes/Dashboard/Bar_Chart/Bar_Chart.md",
+              "description": "The Bar Chart in Qraptor.ai lets users compare numeric values across categories, with customizable styles and dynamic data binding through agents.",
+              "tags": [
+                "bar chart",
+                "visualization",
+                "dashboard",
+                "data binding"
+                
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "5 min"
+            },
+            {
+              "id": "pie-chart",
+              "title": "Pie Chart",
+              "type": "file",
+              "path": "/UI_Nodes/Dashboard/Pie_Chart/Pie_Chart.md",
+              "description": "The Pie Chart in Qraptor.ai helps visualize proportions within a dataset, with customizable styles and dynamic data binding via agents.",
+              "tags": [
+                "pie chart",
+                "visualization",
+                "dashboard",
+                "data binding"
+                
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "5 min"
+            }
+          ]
+        },
+        {
+          "id": "form-component",
+          "title": "Form Component",
+          "type": "folder",
+          "children": [
+            {
+              "id": "single-select",
+              "title": "Single Select",
+              "type": "file",
+              "path": "/UI_Nodes/Form/Single_Select/Single_Select.md",
+              "description": "The Single Select component provides a searchable dropdown for choosing one option, with flexible styling and optional filtering features.",
+              "tags": [
+                "single select",
+                "dropdown",
+                "form component",
+                "searchable select"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "5 min"
+            },
+            {
+              "id": "text-area",
+              "title": "Text Area",
+              "type": "file",
+              "path": "/UI_Nodes/Form/Text_Area/Text_Area.md",
+              "description": "The Text Area component enables multi-line text input for comments, feedback, or descriptions, with style customization and variable binding.",
+              "tags": [
+                "text area",
+                "form component",
+                "multi-line input"  
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "4 min"
+            },
+            {
+              "id": "tool-bar",
+              "title": "Tool Bar",
+              "type": "file",
+              "path": "/UI_Nodes/Form/Tool_Bar/Tool_Bar.md",
+              "description": "The Tool Bar component serves as a styled header for forms or sections, displaying a title and optional icon for clear, consistent labeling.",
+              "tags": ["toolbar", "form header", "section label"],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "4 min"
+            },
+            {
+              "id": "button",
+              "title": "Button",
+              "type": "file",
+              "path": "/UI_Nodes/Form/Button/Button.md",
+              "description": "The Button component triggers actions or workflows on click and can be customized with labels, icons, and styles to fit your application theme.",
+              "tags": [
+                "button",
+                "form action",
+                "workflow trigger"
+  
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "4 min"
+            },
+            {
+              "id": "checkbox",
+              "title": "Checkbox",
+              "type": "file",
+              "path": "/UI_Nodes/Form/Checkbox/CheckBox.md",
+              "description": "The Checkbox component lets users select multiple visible options, making it ideal for forms with preferences, subscriptions, or multi-answer fields.",
+              "tags": ["checkbox", "form input", "multi-select" ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "4 min"
+            },
+            {
+              "id": "date-component",
+              "title": "Date Component",
+              "type": "file",
+              "path": "/UI_Nodes/Form/Date/Date.md",
+              "description": "Allows users to select and customize date inputs in forms, with options for formatting, selection modes, and visual styling.",
+              "tags": ["date", "form", "input", "ui-component", "picker"],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "5 min"
+            },
+            {
+              "id": "file-uploader",
+              "title": "File Uploader",
+              "type": "file",
+              "path": "/UI_Nodes/Form/File_Uploader/File_Uploader.md",
+              "description": "Component for uploading and storing files with options for format filtering, size restrictions, and custom messages.",
+              "tags": ["file", "upload", "form", "attachments", "dms"],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "5 min"
+            },
+            {
+              "id": "input",
+              "title": "Input",
+              "type": "file",
+              "path": "/UI_Nodes/Form/Input/Input.md",
+              "description": "A form component for entering text, numbers, or emails with two-way data binding and customizable appearance.",
+              "tags": ["input", "form", "text", "data-entry", "field"],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "5 min"
+            },
+            {
+              "id": "label",
+              "title": "Label",
+              "type": "file",
+              "path": "/UI_Nodes/Form/Label/Label.md",
+              "description": "Provides descriptive text for form fields, improving clarity and accessibility in form design.",
+              "tags": ["label", "form", "field-text", "accessibility", "ui"],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "5 min"
+            },
+            {
+              "id": "multi-select",
+              "title": "Multi Select",
+              "type": "file",
+              "path": "/UI_Nodes/Form/Multi_Select/Multi_Select.md",
+              "description": "Allows users to select multiple options from a dropdown, supporting chips, filtering, and customizable styling for flexible multi-choice inputs.",
+              "tags": [
+                "multi-select",
+                "dropdown",
+                "form",
+                "multiple-options",
+                "ui"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "5 min"
+            },
+            {
+              "id": "radio-button",
+              "title": "Radio Button",
+              "type": "file",
+              "path": "/UI_Nodes/Form/Radio_Button/Radio_Button.md",
+              "description": "Allows users to choose a single option from a predefined list, ideal for capturing preferences or multiple-choice inputs in forms.",
+              "tags": ["radio", "form", "single-selection", "ui", "option"],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "5 min"
+            }
+          ]
+        },
+        {
+          "id": "document",
+          "title": "Document",
+          "type": "folder",
+          "children": [
+            {
+              "id": "markdown-viewer",
+              "title": "Markdown Viewer",
+              "type": "file",
+              "path": "/UI_Nodes/Document/Markdown_Viewer/Markdown_Viewer.md",
+              "description": "Displays content from a Markdown file in a visually formatted layout, with options for headers, icons, and custom styles.",
+              "tags": ["markdown", "viewer", "document", "ui", "display"],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "5 min"
+            },
+            {
+              "id": "pdf-viewer",
+              "title": "PDF Viewer",
+              "type": "file",
+              "path": "/UI_Nodes/Document/Pdf_Viewer/Pdf_Viewer.md",
+              "description": "Enables inline viewing of PDF files within the application, with customizable headers, styles, and a click-to-view behavior.",
+              "tags": ["pdf", "viewer", "document", "ui", "display"],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "5 min"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "app-creation",
+      "title": "App Creation",
+      "type": "folder",
+      "children": [
+        {
+          "id": "whatsapp-bot",
+          "title": "Whatsapp Bot",
+          "type": "folder",
+          "children": [
+            {
+              "id": "whatsapp-bot-step1-global-dms-config",
+              "title": "WhatsApp Bot Creation - Step 1: Global DMS Configuration",
+              "type": "file",
+              "path": "/App_Creation/WhatsApp/WhatsApp_DMS_Config/WhatsApp_DMS_Config.md",
+              "description": "This tutorial guides you through setting up a global configuration for DMS folder uploads to manage document storage seamlessly across WhatsApp bot workflows.",
+              "tags": [
+                "whatsapp",
+                "bot",
+                "dms",
+                "configuration",
+                "app creation"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "whatsapp-bot-step2-global-whatsapp-config",
+              "title": "WhatsApp Bot Creation - Step 2: Global WhatsApp Configuration",
+              "type": "file",
+              "path": "/App_Creation/WhatsApp/WhatsApp_Whatsapp_Config/WhatsApp_Whatsapp_Config.md",
+              "description": "This tutorial explains how to set up a global WhatsApp configuration to connect your bot with the WhatsApp Cloud API for sending messages via your WhatsApp Business number.",
+              "tags": [
+                "whatsapp",
+                "bot",
+                "configuration",
+                "cloud api",
+                "app creation"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "beginner",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "whatsapp-bot-generic-use-case",
+              "title": "WhatsApp Bot Creation - Example Use Case",
+              "type": "file",
+              "path": "/App_Creation/WhatsApp/Whatsapp_Bot_Creation/Whatsapp_Bot_Creation.md",
+              "description": "Guide to creating a WhatsApp-based Vehicle Insurance Claim Management Application, enabling an agent to handle key operations within the platform.",
+              "tags": [
+                "whatsapp",
+                "bot",
+                "use case",
+                "app creation"
+              ],
+              "lastUpdated": "2025-08-01",
+              "difficulty": "intermediate",
+              "estimatedReadTime": "15 min"
+            },
+            {
+              "id": "whatsapp-super-agent-config",
+              "title": "WhatsApp Bot Creation - Step 4: Super Agent Configuration",
+              "type": "file",
+              "path": "/App_Creation/WhatsApp/Whatsapp_Super_Agent_Config/whatsapp-super-agent.md",
+              "description": "This is the last step in creating a WhatsApp bot, where you configure the Super Agent. The Super Agent acts as an intelligent orchestrator, leveraging context, agent capabilities, training examples, and defined policies to determine whether a specialized agent should handle a user query or if it can respond directly.",
+              "tags": [
+                "whatsapp",
+                "super-agent",
+                "orchestration"
+              ],
+              "lastUpdated": "2025-01-14",
+              "difficulty": "advanced",
+              "estimatedReadTime": "20 min"
+            }
+          ]
+        }
+      ] 
+    }
+  ]
+}
