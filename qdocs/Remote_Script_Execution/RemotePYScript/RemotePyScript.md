@@ -24,7 +24,7 @@ This is useful when you want to run custom logic, perform calculations, transfor
 
 - Choose from the list of **active executors** available in your subscription.
 - Only executors that are marked **active** can be selected.
-- To create new executors or manage existing ones, refer to the **[Executors Management Page](/qdocs/Platform_Overview/Executors_Management/ExecutorsManagement.md)**.
+- To create new executors or manage existing ones, refer to the **[Executors Management Page](/docs/remote-script-execution/executor-management/executor-management-page/)**.
 
 ![ :( Can't load image ](/qdocs/Remote_Script_Execution/RemotePyScript/executor-selection.png)
 
@@ -127,7 +127,7 @@ Use the **Remote Python Script Node** when you need to:
 ✅ **Summary**
 
 The Remote Python Script Node lets you execute Python code on active executors for scalability and isolation.
-Executors can be managed from the **[Executors Management Page](/qdocs/Remote_Script_Execution/Executor_Management/ExecutorManagement.md)**.
+Executors can be managed from the **[Executors Management Page](/docs/remote-script-execution/executor-management/executor-management-page/)**.
 Code runs remotely with input variable injection, timeout support, and structured output handling for smooth integration into your agent.
 
 Got it 👍 — here’s a clean **Quick Links** section you can add at the bottom of the doc:
@@ -136,5 +136,5 @@ Got it 👍 — here’s a clean **Quick Links** section you can add at the bott
 
 ### Quick Links
 
-- [Executors Management Page](/qdocs/Remote_Script_Execution/Executor_Management/ExecutorManagement.md)
+- [Executors Management Page](/docs/remote-script-execution/executor-management/executor-management-page/)
 - [Remote Executor (q-remotex) Docker Hub Page](https://hub.docker.com/r/qraptor/q-remotex)
