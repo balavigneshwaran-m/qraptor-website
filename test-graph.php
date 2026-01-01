@@ -61,7 +61,7 @@ $emailData = [
         'toRecipients' => [
             [
                 'emailAddress' => [
-                    'address' => 'sales@augmentappz.ai'
+                    'address' => 'bala.friends5@gmail.com'
                 ]
             ]
         ]
