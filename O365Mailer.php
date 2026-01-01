@@ -248,7 +248,7 @@ class O365Mailer {
                     <!-- Header -->
                     <tr>
                         <td style="padding: 40px 40px 20px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1);">
-                            <h1 style="margin: 0; color: #1dc690; font-size: 28px; font-weight: bold;">You're In!</h1>
+                            <h1 style="margin: 0; color: #1dc690; font-size: 28px; font-weight: bold;">You are In!</h1>
                             <p style="margin: 8px 0 0; color: rgba(255,255,255,0.6); font-size: 14px;">Email Verified Successfully</p>
                         </td>
                     </tr>
