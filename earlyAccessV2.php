@@ -4,6 +4,11 @@
  * Handles email registration with duplicate prevention and verification
  */
 
+// Error handling
+error_reporting(E_ALL);
+ini_set('display_errors', 0);
+ini_set('log_errors', 1);
+
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, OPTIONS');
@@ -15,7 +20,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
+// Check if config exists
+if (!file_exists(__DIR__ . '/config.php')) {
+    http_response_code(500);
+    echo json_encode([
+        'success' => false,
+        'message' => 'Server configuration missing. Please contact support.',
+        'debug' => 'config.php not found'
+    ]);
+    exit;
+}
+
 require_once __DIR__ . '/config.php';
+
+// Check if data directory is writable
+if (!is_writable(DATA_DIR)) {
+    // Try to create it
+    if (!file_exists(DATA_DIR)) {
+        @mkdir(DATA_DIR, 0755, true);
+    }
+    if (!is_writable(DATA_DIR)) {
+        http_response_code(500);
+        echo json_encode([
+            'success' => false,
+            'message' => 'Server storage unavailable. Please try again later.',
+            'debug' => 'DATA_DIR not writable: ' . DATA_DIR
+        ]);
+        exit;
+    }
+}
+
 require_once __DIR__ . '/RegistrationManager.php';
 require_once __DIR__ . '/O365Mailer.php';
 
