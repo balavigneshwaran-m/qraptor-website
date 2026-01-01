@@ -4,6 +4,119 @@
  * Protected by token authentication from config
  */
 
+error_reporting(E_ALL);
+ini_set('display_errors', 0);
+ini_set('log_errors', 1);
+
+// Define showLoginPage function first (before it's called)
+function showLoginPage($showError = false) {
+    ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - qRaptor 2.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #040E12;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .login-box {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: 24px;
+            color: #1dc690;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 13px;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .error {
+            background: rgba(231, 76, 60, 0.1);
+            border: 1px solid rgba(231, 76, 60, 0.3);
+            color: #e74c3c;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 13px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            color: #888;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            color: #fff;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        input:focus {
+            outline: none;
+            border-color: #1dc690;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #1dc690;
+            color: #040E12;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>qRaptor Admin</h1>
+        <p class="subtitle">Registration Dashboard</p>
+        <?php if ($showError): ?>
+        <div class="error">Invalid admin token. Please try again.</div>
+        <?php endif; ?>
+        <form method="GET" action="">
+            <label>Admin Token</label>
+            <input type="password" name="token" placeholder="Enter admin token" required autofocus>
+            <button type="submit">Access Dashboard</button>
+        </form>
+    </div>
+</body>
+</html>
+<?php
+}
+
 require_once __DIR__ . '/config.php';
 
 // Check authentication - token comes from config.php
@@ -255,115 +368,5 @@ if (isset($_GET['export']) && $_GET['export'] === 'csv') {
 </html>
 <?php
 }
-
-/**
- * Show login page
- */
-function showLoginPage($showError = false) {
-    ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login - qRaptor 2.0</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background: #040E12;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        .login-box {
-            background: rgba(255,255,255,0.03);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 16px;
-            padding: 40px;
-            width: 100%;
-            max-width: 400px;
-        }
-        h1 {
-            font-family: 'Lexend Deca', sans-serif;
-            font-size: 24px;
-            color: #1dc690;
-            margin-bottom: 8px;
-            text-align: center;
-        }
-        .subtitle {
-            color: #666;
-            font-size: 13px;
-            text-align: center;
-            margin-bottom: 32px;
-        }
-        .error {
-            background: rgba(231, 76, 60, 0.1);
-            border: 1px solid rgba(231, 76, 60, 0.3);
-            color: #e74c3c;
-            padding: 12px;
-            border-radius: 8px;
-            font-size: 13px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        label {
-            display: block;
-            color: #888;
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 8px;
-        }
-        input {
-            width: 100%;
-            padding: 14px 16px;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 8px;
-            color: #fff;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-        input:focus {
-            outline: none;
-            border-color: #1dc690;
-        }
-        button {
-            width: 100%;
-            padding: 14px;
-            background: #1dc690;
-            color: #040E12;
-            border: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 14px;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        button:hover {
-            transform: translateY(-2px);
-        }
-    </style>
-</head>
-<body>
-    <div class="login-box">
-        <h1>qRaptor Admin</h1>
-        <p class="subtitle">Registration Dashboard</p>
-        <?php if ($showError): ?>
-        <div class="error">Invalid admin token. Please try again.</div>
-        <?php endif; ?>
-        <form method="GET" action="">
-            <label>Admin Token</label>
-            <input type="password" name="token" placeholder="Enter admin token" required autofocus>
-            <button type="submit">Access Dashboard</button>
-        </form>
-    </div>
-</body>
-</html>
-<?php
 }
 ?>
