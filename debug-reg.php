@@ -6,16 +6,16 @@
 
 header('Content-Type: application/json');
 
-$adminToken = 'qraptor2024admin';
+require_once __DIR__ . '/config.php';
+
 $providedToken = isset($_GET['token']) ? $_GET['token'] : '';
 
-if ($providedToken !== $adminToken) {
+if ($providedToken !== ADMIN_TOKEN) {
     http_response_code(403);
     echo json_encode(['error' => 'Invalid admin token']);
     exit;
 }
 
-require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/RegistrationManager.php';
 
 $email = isset($_GET['email']) ? urldecode(trim($_GET['email'])) : '';
