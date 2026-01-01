@@ -56,7 +56,7 @@ class O365Mailer {
     /**
      * Send email using Microsoft Graph API
      */
-    public function sendEmail($to, $subject, $body, $isHtml = true) {
+    public function sendEmail($to, $subject, $body, $isHtml = true, $replyTo = null) {
         $token = $this->getAccessToken();
         if (!$token) {
             error_log("Failed to get O365 access token");
@@ -84,9 +84,31 @@ class O365Mailer {
                             'address' => $to
                         ]
                     ]
+                ],
+                'replyTo' => [
+                    [
+                        'emailAddress' => [
+                            'address' => $replyTo ?? ADMIN_EMAIL,
+                            'name' => 'qRaptor Support'
+                        ]
+                    ]
+                ],
+                'internetMessageHeaders' => [
+                    [
+                        'name' => 'X-Priority',
+                        'value' => '3'
+                    ],
+                    [
+                        'name' => 'X-Mailer',
+                        'value' => 'qRaptor-Studio/2.0'
+                    ],
+                    [
+                        'name' => 'List-Unsubscribe',
+                        'value' => '<mailto:' . ADMIN_EMAIL . '?subject=Unsubscribe>'
+                    ]
                 ]
             ],
-            'saveToSentItems' => false
+            'saveToSentItems' => true
         ];
         
         $ch = curl_init();
@@ -119,7 +141,7 @@ class O365Mailer {
      * @param string $verifyUrl - full verification URL (already built with token)
      */
     public function sendVerificationEmail($email, $verifyUrl) {
-        $subject = "✅ Verify your qRaptor 2.0 Early Access Registration";
+        $subject = "Confirm your qRaptor 2.0 Early Access Registration";
         
         $body = '
 <!DOCTYPE html>
@@ -154,7 +176,7 @@ class O365Mailer {
                                 <tr>
                                     <td align="center" style="padding: 20px 0;">
                                         <a href="' . $verifyUrl . '" style="display: inline-block; background: linear-gradient(135deg, #1dc690, #278ab0); color: #040E12; text-decoration: none; padding: 16px 40px; border-radius: 50px; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">
-                                            ✓ Verify Email Address
+                                            Verify Email Address
                                         </a>
                                     </td>
                                 </tr>
@@ -209,7 +231,7 @@ class O365Mailer {
      * Send confirmation email after verification
      */
     public function sendWelcomeEmail($email) {
-        $subject = "🎉 Welcome to qRaptor 2.0 Early Access!";
+        $subject = "Welcome to qRaptor 2.0 Early Access";
         
         $body = '
 <!DOCTYPE html>
@@ -226,8 +248,7 @@ class O365Mailer {
                     <!-- Header -->
                     <tr>
                         <td style="padding: 40px 40px 20px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1);">
-                            <div style="font-size: 48px; margin-bottom: 16px;">🎉</div>
-                            <h1 style="margin: 0; color: #1dc690; font-size: 28px; font-weight: bold;">You\'re In!</h1>
+                            <h1 style="margin: 0; color: #1dc690; font-size: 28px; font-weight: bold;">You're In!</h1>
                             <p style="margin: 8px 0 0; color: rgba(255,255,255,0.6); font-size: 14px;">Email Verified Successfully</p>
                         </td>
                     </tr>
@@ -245,17 +266,17 @@ class O365Mailer {
                                 <table width="100%" cellpadding="0" cellspacing="0">
                                     <tr>
                                         <td style="padding: 8px 0; color: rgba(255,255,255,0.8); font-size: 14px;">
-                                            <span style="color: #1dc690;">✓</span> AI Agent Orchestration
+                                            - AI Agent Orchestration
                                         </td>
                                     </tr>
                                     <tr>
                                         <td style="padding: 8px 0; color: rgba(255,255,255,0.8); font-size: 14px;">
-                                            <span style="color: #1dc690;">✓</span> App Workspace - Prompt to Full-Stack Apps
+                                            - App Workspace - Prompt to Full-Stack Apps
                                         </td>
                                     </tr>
                                     <tr>
                                         <td style="padding: 8px 0; color: rgba(255,255,255,0.8); font-size: 14px;">
-                                            <span style="color: #1dc690;">✓</span> One-Click Deployment (Hosted or On-Prem)
+                                            - One-Click Deployment (Hosted or On-Prem)
                                         </td>
                                     </tr>
                                 </table>
@@ -270,7 +291,7 @@ class O365Mailer {
                                 <tr>
                                     <td align="center" style="padding: 32px 0 16px;">
                                         <a href="https://qraptor.ai" style="display: inline-block; background: linear-gradient(135deg, #1dc690, #278ab0); color: #040E12; text-decoration: none; padding: 14px 32px; border-radius: 50px; font-weight: bold; font-size: 13px; text-transform: uppercase; letter-spacing: 1px;">
-                                            Explore qRaptor →
+                                            Explore qRaptor
                                         </a>
                                     </td>
                                 </tr>
@@ -301,7 +322,7 @@ class O365Mailer {
      * Send notification to admin
      */
     public function sendAdminNotification($email, $verified = false) {
-        $status = $verified ? "VERIFIED ✅" : "PENDING VERIFICATION ⏳";
+        $status = $verified ? "VERIFIED" : "PENDING VERIFICATION";
         $subject = "qRaptor 2.0 Registration: $email - $status";
         
         $body = "
