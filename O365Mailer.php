@@ -84,28 +84,6 @@ class O365Mailer {
                             'address' => $to
                         ]
                     ]
-                ],
-                'replyTo' => [
-                    [
-                        'emailAddress' => [
-                            'address' => $replyTo ?? ADMIN_EMAIL,
-                            'name' => 'qRaptor Support'
-                        ]
-                    ]
-                ],
-                'internetMessageHeaders' => [
-                    [
-                        'name' => 'X-Priority',
-                        'value' => '3'
-                    ],
-                    [
-                        'name' => 'X-Mailer',
-                        'value' => 'qRaptor-Studio/2.0'
-                    ],
-                    [
-                        'name' => 'List-Unsubscribe',
-                        'value' => '<mailto:' . ADMIN_EMAIL . '?subject=Unsubscribe>'
-                    ]
                 ]
             ],
             'saveToSentItems' => true
