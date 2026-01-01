@@ -115,10 +115,10 @@ class O365Mailer {
     
     /**
      * Send verification email to user
+     * @param string $email - recipient email
+     * @param string $verifyUrl - full verification URL (already built with token)
      */
-    public function sendVerificationEmail($email, $token) {
-        $verifyUrl = SITE_URL . "/verify.php?token=" . urlencode($token) . "&email=" . urlencode($email);
-        
+    public function sendVerificationEmail($email, $verifyUrl) {
         $subject = "✅ Verify your qRaptor 2.0 Early Access Registration";
         
         $body = '

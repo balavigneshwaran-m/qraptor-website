@@ -4,11 +4,17 @@
  * Validates verification token and marks email as verified
  */
 
+// Enable error logging for debugging
+error_reporting(E_ALL);
+ini_set('log_errors', 1);
+ini_set('error_log', __DIR__ . '/data/error.log');
+
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/RegistrationManager.php';
 require_once __DIR__ . '/O365Mailer.php';
 
-$email = isset($_GET['email']) ? trim($_GET['email']) : '';
+// URL decode the email parameter (handles + and special chars)
+$email = isset($_GET['email']) ? urldecode(trim($_GET['email'])) : '';
 $token = isset($_GET['token']) ? trim($_GET['token']) : '';
 
 // Validate inputs
