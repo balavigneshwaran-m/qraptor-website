@@ -25,7 +25,7 @@ e:["$","$1","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children
 f:["$","$1","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
 10:["$","$1","c",{"children":["$L14",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/74fc351921f6806e.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L15",null,{"children":["$L16",["$","$L17",null,{"promise":"$@18"}]]}]]}]
 11:["$","$1","h",{"children":[null,[["$","$L19",null,{"children":"$L1a"}],null],["$","$L1b",null,{"children":["$","div",null,{"hidden":true,"children":["$","$a",null,{"fallback":null,"children":"$L1c"}]}]}]]}]
-1d:I[21898,["40","static/chunks/app/docs/page-84163f1abd911166.js"],"DocsPageContent"]
+1d:I[21898,["582","static/chunks/app/docs/%5B...slug%5D/page-b285f45d7e01ed2d.js"],"DocsPageContent"]
 14:["$","$L1d",null,{"initialSlug":["ui-nodes","document","markdown-viewer"],"initialDoc":{"id":"markdown-viewer","title":"Markdown Viewer","type":"file","path":"/UI_Nodes/Document/Markdown_Viewer/Markdown_Viewer.md","description":"Displays content from a Markdown file in a visually formatted layout, with options for headers, icons, and custom styles.","tags":["markdown","viewer","document","ui","display"],"lastUpdated":"2025-08-01","difficulty":"beginner","estimatedReadTime":"5 min"}}]
 1a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 16:null
