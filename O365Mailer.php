@@ -271,9 +271,13 @@ class O365Mailer {
                                         <a href="https://www.youtube.com/watch?v=fa3FWfdjo6E" target="_blank" style="display: block; text-decoration: none;">
                                             <div style="position: relative; display: inline-block;">
                                                 <img src="https://img.youtube.com/vi/fa3FWfdjo6E/maxresdefault.jpg" alt="qRaptor 2.0 Reveal" style="width: 100%; max-width: 480px; border-radius: 12px; border: 2px solid rgba(29, 198, 144, 0.3);" />
-                                                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px; background: rgba(29, 198, 144, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                                                    <div style="width: 0; height: 0; border-left: 20px solid white; border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 4px;"></div>
-                                                </div>
+                                                <table cellpadding="0" cellspacing="0" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                                    <tr>
+                                                        <td align="center" valign="middle" style="width: 60px; height: 60px; background: rgba(29, 198, 144, 0.9); border-radius: 50%;">
+                                                            <div style="width: 0; height: 0; border-left: 18px solid white; border-top: 11px solid transparent; border-bottom: 11px solid transparent; margin-left: 5px;"></div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
                                             </div>
                                             <p style="margin: 12px 0 0; color: #1dc690; font-size: 14px; font-weight: 600;">▶ Watch qRaptor 2.0 Reveal</p>
                                         </a>
