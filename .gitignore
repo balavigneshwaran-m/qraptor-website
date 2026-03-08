@@ -1,3 +1,0 @@
-# Ignore config with secrets
-config.php
-data/*.json
